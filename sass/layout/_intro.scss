@@ -1,0 +1,168 @@
+@import "../core/settings";
+
+ .btn{
+  cursor: pointer; 
+  @include font-props('FuturaBookC', 13px, 15px, #FFFFFF); 
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 2px;
+  
+  &--call{
+    background-color: #E3B873;
+    padding: 13px 33px;
+  }
+
+  &--intro{
+    width: 47.58%; //207
+    padding: 20px 0;
+    background-color: transparent;
+    border: 1px solid #fff;
+        
+    transition: background-color .1s linear;
+    transition: border-color .1s linear;
+
+    &:hover,
+    &.active{
+      background-color: #E3B873;
+      border-color: transparent;   
+    }
+  }
+}
+
+.sidebar{
+  width: 5.69%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -95px;
+
+  &__text{  //174
+    width: 174px;
+    display: block;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    @include font-props('FuturaDemiC', 14px, 16px, #E3B873);
+
+    transform-origin: left top;
+    transform: rotate(90deg) translate3d(0px, -50px, 0);
+  }
+
+  &__text::after{
+    content: '';
+    display: inline-block;
+    box-sizing: border-box;
+    margin-left: 8px;
+    margin-bottom: 3px;
+    width: 51px;
+    height: 3px;
+    background: #E3B873;    
+  }
+
+}
+
+.intro{
+  background-color: #131313;
+  display: flex;
+
+  .wrapper{
+    height: 100vh;
+    width: 94.31%;
+    flex-shrink: 0;
+  }
+
+  &__inner{
+    height: 94.27%;
+    background: url("../../assets/img/bgr-intro.png");
+    background-size: cover;
+
+    .header{
+      height: 9.90%;
+      background-color: #131313;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .logo{
+        @include font-props('FuturaDemiC', 14px, 16px, #E3B873);
+        text-transform: uppercase; 
+        cursor: pointer; 
+      }
+
+      .nav{
+        display: flex;
+        justify-content: space-between;
+
+        &__link{
+          @include font-props('FuturaBookC', 14px, 16px, #FFFFFF); 
+          text-decoration: none;
+          text-transform: uppercase;
+          margin-right: 47px;
+        }
+
+        &__link:last-child{
+          margin-right: 0;
+        }
+
+        &__link:hover,
+        &__link.active{
+          color: #E3B873;
+          cursor: pointer;
+        }
+      }
+
+      .contacts{   
+        width: 32.17%;  //437px
+
+        &__link{
+          @include font-props('FuturaDemiC', 14px, 16px, #E3B873); 
+          text-decoration: underline;
+          text-transform: uppercase;
+
+          margin-right: 45px;
+        }
+
+      }
+    }
+  }
+
+  &__main{
+    width: 40.35%; //548
+    height: 90.1%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-left: 4.42%; 
+  }
+
+  &__title{
+    display: block;
+    @include font-props('Yeseva One', 40px, 53px, #FFFFFF);
+    text-transform: uppercase;
+    padding-bottom: 24px;
+
+    span{
+      color: #E3B873;
+    }
+  }
+
+  &__subtitle{
+    width: 79.37%;
+    @include font-props('FuturaBookC', 22px, 30px, #FFFFFF);
+    padding-bottom: 41px;
+  }
+
+  &__btn{
+    width: 79.37%; //435
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
+
