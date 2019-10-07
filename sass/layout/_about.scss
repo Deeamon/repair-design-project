@@ -49,5 +49,41 @@
     
   }
 
+  &__nav{
+    width: 100%;
+    height: 128px;
+
+    display: flex;
+    justify-content: flex-end;
+
+    .navbar{
+      height: 100%;
+      width: 58.88%; //848
+
+      display: flex;
+      align-items: flex-end;
+      
+      &__item{
+        @include font-props("Yeseva One", 14px, 19px, rgba(255, 255, 255, 0.3));
+        text-transform: uppercase;
+        text-decoration: none;
+
+        transition: color .1s linear;
+        transition: text-decoration .1s linear;
+        padding-right: 60px;
+        padding-bottom: 53px;
+      }
+
+      &__item:last-child{
+        padding-right: 0;
+      }
+
+      &__item:hover,
+      &__item.active{
+        color: #E3B873;
+        text-decoration: underline;
+      }
+    }
+  }
 
 }
