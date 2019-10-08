@@ -1,0 +1,79 @@
+@import "../core/settings";
+@import "../core/container";
+
+.request{
+  height: 780px;
+  width: 100%;
+  background-color: #fff;
+
+  &__text{
+    display: block;
+    margin: 0 auto;
+    width: 680px;
+
+    @include font-props('FuturaBookC', 20px, 34px, #363636); 
+    text-align: center;
+    padding-top: 265px; 
+  }
+
+  &__text::before{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 54px;
+
+    border-bottom: 2px solid #E3B873;
+    margin-bottom: 35px;
+  }
+
+  &__form{
+    display: flex;
+    justify-content: center;
+    margin-top: 105px;
+
+    .form{
+      margin-right: 45px;
+
+      &__label{
+        display: block;
+        @include font-props('FuturaBookC', 15px, 20px, rgba(54, 54, 54, 0.5));
+      }
+
+      &__input{
+        width: 230px;
+        border: 0;
+        border-bottom: 1px solid rgba(54, 54, 54, 0.5);
+        @include font-props('FuturaBookC', 18px, 24px, #363636);
+
+      }
+
+      &__input::placeholder{
+        @include font-props('FuturaBookC', 18px, 24px, #363636);
+      }
+
+      &__btn{
+        cursor: pointer; 
+        @include font-props('FuturaDemiC', 15px, 26px, #FFFFFF); 
+        text-transform: uppercase;
+        border: 0;
+        border-radius: 2px;
+        
+        background-color: #E3B873;
+        padding: 10px 75px;
+        
+      }
+
+    }
+  }
+
+  .checkbox{
+    text-align: center;
+    margin-top: 33px;
+
+    .checkbox__name{
+      @include font-props('FuturaBookC', 16px, 22px , #181818);
+    }
+
+  }
+
+}
