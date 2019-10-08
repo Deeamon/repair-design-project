@@ -1,0 +1,29 @@
+@import "../core/settings";
+@import "../core/container";
+
+.control{
+  height: 330px;
+  widows: 100%;
+  background-color: #131313;
+  position: relative;
+
+  &__title{
+    @include font-props('Yeseva One', 20px, 28px, #FFFFFF); 
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 13px;
+  }
+
+  &__icon{
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__video{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-left: -409px;
+  }
+
+}
