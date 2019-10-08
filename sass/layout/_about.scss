@@ -3,7 +3,7 @@
 
 .about{
   background-color: #131313;
-  height: 702px;
+  height: 660px;
   
   position: relative;
   
@@ -92,8 +92,10 @@
     display: flex;
 
     .gallery{
-      flex: 1 1 40%;
+      box-sizing: border-box;
+      flex: 1 1 41.12%;
       height: 100%;
+      padding-left: 60px;
 
 
       &__title{
@@ -135,7 +137,8 @@
     }
 
     .gallery__photo{
-      flex: 3 1 60%;
+      box-sizing: border-box;
+      flex: 3 1 58.88%;
       height: 100%;
       display: flex;
 
