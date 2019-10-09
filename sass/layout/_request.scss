@@ -1,5 +1,6 @@
 @import "../core/settings";
 @import "../core/container";
+@import "../core/form";
 
 .request{
   height: 780px;
@@ -31,39 +32,7 @@
     justify-content: center;
     margin-top: 105px;
 
-    .form{
-      margin-right: 45px;
-
-      &__label{
-        display: block;
-        @include font-props('FuturaBookC', 15px, 20px, rgba(54, 54, 54, 0.5));
-      }
-
-      &__input{
-        width: 230px;
-        border: 0;
-        border-bottom: 1px solid rgba(54, 54, 54, 0.5);
-        @include font-props('FuturaBookC', 18px, 24px, #363636);
-
-      }
-
-      &__input::placeholder{
-        @include font-props('FuturaBookC', 18px, 24px, #363636);
-      }
-
-      &__btn{
-        cursor: pointer; 
-        @include font-props('FuturaDemiC', 15px, 26px, #FFFFFF); 
-        text-transform: uppercase;
-        border: 0;
-        border-radius: 2px;
-        
-        background-color: #E3B873;
-        padding: 10px 75px;
-        
-      }
-
-    }
+   
   }
 
   .checkbox{

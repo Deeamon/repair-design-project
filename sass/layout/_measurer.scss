@@ -1,0 +1,149 @@
+@import "../core/settings";
+@import "../core/container";
+@import "../core/form";
+
+.measurer{
+  
+  margin-top: 180px;
+
+  &__inner{
+    height: 705px;
+    width: 100%;
+    display: flex;
+    // justify-content: space-between;
+  }
+
+  &__circle{
+    height: 100%;
+    flex: 1 0 60%;
+    background: url("../../assets/img/building.png") no-repeat;
+
+    position: relative;
+    
+    .circle{
+      height: 92%;
+      width: 74%;
+      border-right: 3px solid #E3B873;
+      border-radius: 50%;
+      margin-top: 50px;
+
+      position: absolute;
+      top: 0;
+      left: -17%;
+      z-index: 1;
+
+      &__item{
+        &--first{
+          display: flex;
+          position: absolute;
+          top: 15%;
+          left: 42%;
+          z-index: 2;
+        }
+
+        &--second{
+          display: flex;
+          position: absolute;
+          top: 30%;
+          left: 50%;
+          z-index: 2;
+
+          .circle__text{
+            padding-top: 20px;
+          }
+        }
+
+        &--third{
+          display: flex;
+          position: absolute;
+          top: 54%;
+          left: 53%;
+          z-index: 2;
+
+          .circle__text{
+            padding-top: 20px;
+          }
+        }
+
+        &--fourth{
+          display: flex;
+          position: absolute;
+          top: 76%;
+          left: 46%;
+          z-index: 2;
+        }
+      }
+
+      &__icon{
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background-color: #E3B873;
+        @include font-props('Yeseva One', 18px, 25px, #ffffff);
+        margin-right: 10px;
+        border: 10px solid #fff;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &__text{
+        width: 390px;
+        height: auto;
+        padding-top: 10px;
+        @include font-props('FuturaMediumC', 18px, 21px, #363636);
+      }
+
+  
+
+    }
+  }
+  &__form{
+    height: 100%;
+    flex: 1 0 40%;
+  }
+
+  &__request{
+    width: 509px;
+    height: 506px;
+    margin: 20% auto 0;
+
+    background-color: #131313;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+  }
+
+  &__title{
+    @include font-props('FuturaDemiC', 20px, 25px, #ffffff);
+    width: 290px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0 40px;
+
+  }
+
+  &__discount{
+    width: 509px;
+    margin: 37px auto 0;
+    display: flex;
+    .discount__text{
+      width: 230px;
+      padding-top: 13px;
+      @include font-props('FuturaDemiC', 20px, 25px, #E3B873);
+      text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+    }
+  }
+}
+
+.icon-piggy{
+  display: block;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: #E3B873;
+  text-align: center;
+  font-size: 40px;
+  line-height: 70px;
+  margin-left: 35px;
+  margin-right: 25px;
+}
