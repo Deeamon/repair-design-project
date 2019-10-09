@@ -3,9 +3,10 @@
 @import "../core/form";
 @import "../core/icon";
 
-.measurer{
-  
+.measurer{ 
   margin-top: 180px;
+  height: 730px;
+  overflow: hidden;
 
   &__inner{
     height: 705px;
