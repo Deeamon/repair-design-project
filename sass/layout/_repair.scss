@@ -1,0 +1,22 @@
+@import "../core/settings";
+@import "../core/container";
+@import "../core/card";
+
+.repair{
+  height: 705px;
+  width: 100%;
+  background-color: #fff;
+
+  &__title{
+    text-align: center;  
+    @include font-props('Yeseva One', 20px, 28px, #181818) ;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+  }
+
+  &__icon{
+    display: block;
+    margin: 0 auto;
+  }
+}
+
