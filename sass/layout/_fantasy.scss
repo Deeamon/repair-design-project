@@ -1,0 +1,59 @@
+@import "../core/settings";
+@import "../core/container";
+
+.fantasy{
+
+
+
+  &__inner{
+    box-sizing: border-box;
+    height: 1018px;
+    width: 100%;
+    background: url("../../assets/img/bgr-fantasy.jpg") no-repeat center;
+
+    display: flex;
+  }
+
+  &__list{
+    flex: 1 0 33.3333%;
+    height: 100%;
+
+    .list__title{
+      width: 290px;
+      margin: 205px auto 50px;
+      @include font-props("Yeseva One", 27px, 37px, #E3B873);
+      text-transform: uppercase;
+    }
+
+    .list{
+      width: max-content;
+      margin: 0 0 0 100px;
+    }
+    .list__item{
+      display: block;
+      cursor: pointer;
+      margin-bottom: 12px;
+      @include font-props("ProximaNova", 20px, 34px, #ffffff);
+      padding-bottom: 3px;
+      border-bottom: 1px solid transparent;
+
+      transition: color .1s linear;
+      transition: border-bottom .1s linear;
+    }
+
+    .list__item:hover,
+    .list__item.active{
+      color: #E3B873;
+      padding-bottom: 3px;
+      border-bottom: 1px solid #E3B873;
+    }
+
+  }
+
+
+  &__gallery{
+    flex: 1 0 66.6667%;
+    height: 100%;
+    background-color: blue;
+  }
+}
