@@ -2,12 +2,11 @@
 @import "../core/container";
 
 .fantasy{
-
-
+  margin-top: 129px;
 
   &__inner{
     box-sizing: border-box;
-    height: 1018px;
+    height: 1100px;
     width: 100%;
     background: url("../../assets/img/bgr-fantasy.jpg") no-repeat center;
 
@@ -54,6 +53,63 @@
   &__gallery{
     flex: 1 0 66.6667%;
     height: 100%;
-    background-color: blue;
+    width: 100%;
+    
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 7%;
+
+
+    .gallery__col{
+      height: 100%;
+      flex: 0 0 354px;
+      margin-right: 43px;
+
+      overflow: hidden;
+
+      &--item1{
+        height: 558px;
+        width: 100%;
+        padding: 70px 0 40px;
+
+        img{
+          height: 100%;
+          margin-left: -40%;
+        }
+      } 
+
+      &--item2{
+        height: 350px;
+        width: 100%;
+
+        img{
+          height: 100%;
+        }
+      } 
+
+      &--item3{
+        height: 275px;
+        width: 100%;
+        padding-bottom: 40px;
+
+        img{
+          height: 100%;
+        }
+      } 
+
+      &--item4{
+        height: 626px;
+        width: 100%;
+
+        img{
+          height: 100%;
+        }
+      } 
+    }
+
+    .gallery__item{
+      
+
+    }
   }
 }
