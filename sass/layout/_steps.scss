@@ -1,0 +1,80 @@
+@import "../core/settings";
+
+.steps{
+  background-color: #131313;
+
+  &__inner{
+    width: 100%;
+    display: flex;  
+  }
+
+  .info{
+    margin-top: 280px;
+    padding-left: 100px;
+    flex: 1 0 31.1074%;
+
+    &__suptitle{
+      @include font-props('FuturaDemiC', 15px, 21px, #ffffff);
+      text-transform: uppercase;
+      padding-bottom: 18px;
+    }
+
+    &__title{
+      width: 160px;
+      @include font-props('Yeseva One', 27px, 37px, #E3B873);
+      text-transform: uppercase;
+      padding-bottom: 88px;
+    }
+
+    &__number{
+      @include font-props('Yeseva One', 18px, 25px, #ffffff);
+      text-transform: uppercase;
+      padding-bottom: 22px;
+    }
+
+    &__title2{
+      width: 240px;
+      @include font-props('Yeseva One', 15px, 23px, #E3B873);
+      text-transform: uppercase;
+      padding-bottom: 16px;
+    }
+
+    &__text{
+      width: 340px;
+      @include font-props('FuturaBookC', 15px, 25px, #ffffff);
+    }
+  }
+
+  &__picture{
+    margin-top: 280px;
+    flex: 1 0 60.8926%;
+  }
+
+  &__point{
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .point{
+      flex: 1 1 33.3333%;
+
+      &__num{
+        @include font-props('Yeseva One', 15px, 21px, #ffffff);
+        text-transform: uppercase;
+      }
+
+      &__text{
+        width: 130px;
+        @include font-props('FuturaBookC', 15px, 18px, #ffffff);
+        padding-bottom: 36px;
+      }
+
+      
+    }
+  }
+
+  &__photo{
+   display: block;
+   width: 91.4444%;
+  }
+}
