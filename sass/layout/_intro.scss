@@ -1,33 +1,5 @@
 @import "../core/settings";
-
- .btn{
-  cursor: pointer; 
-  @include font-props('FuturaBookC', 13px, 15px, #FFFFFF); 
-  text-transform: uppercase;
-  border: 0;
-  border-radius: 2px;
-  
-  &--call{
-    background-color: #E3B873;
-    padding: 13px 33px;
-  }
-
-  &--intro{
-    width: 47.58%; //207
-    padding: 20px 0;
-    background-color: transparent;
-    border: 1px solid #fff;
-        
-    transition: background-color .1s linear;
-    transition: border-color .1s linear;
-
-    &:hover,
-    &.active{
-      background-color: #E3B873;
-      border-color: transparent;   
-    }
-  }
-}
+@import "../core/btn";
 
 .sidebar{
   width: 5.69%;
