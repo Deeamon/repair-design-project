@@ -29,10 +29,11 @@
     @include font-props('FuturaBookC', 20px, 27px, #363636);
   }
 
-  &--control{
+  &--black{
     background-color: #131313;
 
-    .title__title{
+    .title__title,
+    .title__subtitle{
       color: #fff;
     }
 
