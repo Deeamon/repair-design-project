@@ -1,0 +1,74 @@
+@import "../core/settings";
+
+.client-card{
+  &__inner{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item{
+    flex: 1 1 33.3333%;
+  }
+
+  .item{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 376px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+    padding: 41px 32px 85px 20px;
+    box-sizing: border-box;
+    position: relative;
+
+    &__info{
+      display: flex;
+      align-items: center;
+      padding-bottom: 39px;
+    }
+
+    &__photo{
+      display: block;
+      width: 76px;
+      height: 76px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    &__name{
+      @include font-props('Yeseva One', 18px, 23px, #181818);
+      width: 178px;
+      margin-left: 23px;
+    }
+
+    &__text{
+      @include font-props('FuturaBookC', 15px, 27px, #959595);
+      width: 325px;
+      margin: 0 auto;  
+    }
+
+    &__key{
+      text-transform: uppercase;
+      background-color: #E3B873;
+      position: absolute;
+      bottom: -30px;
+      left: 0;
+      display: flex;
+
+      .key__size{
+        border-right: 1px solid #FFFFFF;
+      }
+
+      .key__size,
+      .key__day{
+        @include font-props('Yeseva One', 17px, 24px, #FFFFFF);
+        text-transform: uppercase;
+        padding: 17px;
+      }
+    }
+
+  }
+
+}
