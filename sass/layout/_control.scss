@@ -2,26 +2,17 @@
 @import "../core/container";
 
 .control{
-  height: 330px;
-  widows: 100%;
   background-color: #131313;
-  position: relative;
 
-  &__title{
-    @include font-props('Yeseva One', 20px, 28px, #FFFFFF); 
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 13px;
-  }
-
-  &__icon{
-    display: block;
-    margin: 0 auto;
+  &__inner{
+    height: 215px;
+    width: 100%;
+    position: relative;
   }
 
   &__video{
     position: absolute;
-    top: 30%;
+    top: 0%;
     left: 50%;
     margin-left: -409px;
   }
