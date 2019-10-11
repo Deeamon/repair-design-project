@@ -2,9 +2,10 @@
 @import "../core/container";
 
 .card,
-.card--design{
+.card--design,
+.card--team{
   &__inner{
-    margin-top: 31px;
+    padding-top: 31px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -27,7 +28,7 @@
     &__description{
       box-sizing: border-box;
       width: 330px;
-      min-height: 286px;
+      // min-height: 286px;
       background-color: #fff;
       box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
       padding: 25px 0 55px 34px;
@@ -70,6 +71,49 @@
 }
 
 .card--design{
-
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, #131313 50%);
+}
+
+.card--team{
+  background-image: linear-gradient(to bottom,  #131313 50%, rgba(255, 255, 255, 0) 50%);
+
+  .item__icon{
+    width: 70px;
+    height: 70px;
+    background-color: #E3B873;
+    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5);
+
+    font-size: 44px;
+    text-align: center;
+    line-height: 70px;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -170px;
+    margin-top: -35px;
+    z-index: 3;
+  }
+
+  .item__description{
+    width: 234px;
+    padding: 25px 0 55px;
+    margin-left: -117px;
+  
+
+    .description__title{
+      text-align: center;
+    }
+
+    .description__text{
+      text-align: center;
+      @include font-props('FuturaBookC', 18px, 26px, #959595);
+    }
+
+    .description__key{
+      width: 100%;
+      @include font-props('Yeseva One', 13px, 20px, #FFFFFF);
+      text-transform: uppercase;
+    }
+  }
 }
