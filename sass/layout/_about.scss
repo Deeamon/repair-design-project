@@ -5,7 +5,10 @@
   background-color: #131313;
   height: 660px;
   
-  position: relative;
+  &__inner{
+
+    position: relative;
+  }
   
   &__scroll-down{
     display: inline-block;
@@ -17,7 +20,7 @@
     text-decoration: none;
 
     position: absolute;
-    top: -100px;
+    top: -120px;
     left: -10px;
     z-index: 1;
 
