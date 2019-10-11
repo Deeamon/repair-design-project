@@ -1,0 +1,31 @@
+@import "../core/settings";
+
+
+.paragraph,
+.paragraph--team{
+  &__text{
+    display: block;
+    margin: 0 auto;
+    width: 680px;
+  
+    @include font-props('FuturaBookC', 20px, 34px, #363636); 
+    text-align: center;
+    padding-top: 265px; 
+  }
+  
+  &__text::before{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 54px;
+  
+    border-bottom: 2px solid #E3B873;
+    margin-bottom: 35px;
+  }
+}
+
+.paragraph--team{
+  .paragraph__text{
+    padding-top: 0;
+  }
+}
