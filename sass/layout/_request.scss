@@ -1,21 +1,8 @@
 @import "../core/settings";
-@import "../core/form";
+@import "../core/_checkbox";
 
 .request{
   width: 100%;
   background-color: #fff;
-
-
-
-
-  .checkbox{
-    text-align: center;
-    margin-top: 33px;
-
-    .checkbox__name{
-      @include font-props('FuturaBookC', 16px, 22px , #181818);
-    }
-
-  }
 
 }
