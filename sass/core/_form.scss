@@ -10,6 +10,30 @@
     margin: 0 auto;
   }
 
+  &__field{
+    width: 509px;
+    height: 506px;
+    margin: 20% auto 0;
+
+    background-color: #131313;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+  }
+
+  &__field--request{
+    display: flex;
+    justify-content: center;
+    margin-top: 105px;   
+  }
+
+  &__title{
+    @include font-props('FuturaDemiC', 20px, 25px, #ffffff);
+    width: 290px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0 40px;
+
+  }
+
   &__label{
     display: block;
     @include font-props('FuturaBookC', 15px, 20px, rgba(54, 54, 54, 0.5));

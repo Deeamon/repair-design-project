@@ -147,7 +147,7 @@
   <div class="request">
     <div class="container">
 
-      <div class="request__form">
+      <div class="form__field--request">
         <div class="form">
             <label class="form__label" for="form__field">Name</label>
             <input class="form__input" type="text" id="form__field" placeholder="What is your name:">
@@ -275,8 +275,8 @@
         </div><!--measurer__circle-->
 
         <div class="measurer__form">
-          <div class="measurer__request">
-            <div class="measurer__title">Leave a request for free departure of the measurer</div>
+          <div class="form__field">
+            <div class="form__title">Leave a request for free departure of the measurer</div>
             <div class="form--measurer">
                 <label class="form__label--measurer" for="form__field">Name</label>
                 <input class="form__input--measurer" type="text" id="form__field" placeholder="What is your name:">
@@ -647,6 +647,32 @@
     </div>
   </div>
 
+  <!--form for questions-->
+<div class="form--questions">
+  <div class="container">
+    <div class="form__inner">
+
+      <div class="measurer__form">
+        <div class="form__field">
+          <div class="form__title">Leave a request for free departure of the measurer</div>
+          <div class="form--measurer">
+              <label class="form__label--measurer" for="form__field">Name</label>
+              <input class="form__input--measurer" type="text" id="form__field" placeholder="What is your name:">
+          </div>
+          <div class="form--measurer">
+              <label class="form__label--measurer" for="form__field">Phone</label>
+              <input class="form__input--measurer" type="tel" id="form__field" placeholder="Your phone number:">
+          </div>
+          <div class="form--measurer">
+              <label class="form__label--measurer" for="form__field">Email</label>
+              <input class="form__input--measurer" type="email" id="form__field" placeholder="Your email:">
+          </div>
+          <button class="form__btn--measurer" type="submit">Call the measurer</button>
+        </div>
+
+    </div>
+  </div>
+</div>
   <script src="dist/main.bundle.js"></script>
 </body>
 </html>
