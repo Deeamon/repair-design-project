@@ -43,10 +43,15 @@
 
     .contacts__link{
       @include font-props('FuturaDemiC', 14px, 16px, #E3B873); 
-      text-decoration: underline;
+      text-decoration: none;
       text-transform: uppercase;
-
       margin-right: 45px;
+
+      transition: border-bottom .1s linear; 
+    }
+
+    .contacts__link:hover{
+      border-bottom: 1px solid #E3B873;
     }
 
   }
