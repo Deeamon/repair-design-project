@@ -1,0 +1,17 @@
+.map{
+  background-color: rgba(24, 24, 24, 0.9);
+
+  &__inner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  &__photo{
+    width: 925px;
+    height: 465px;
+    background: url('../../assets/img/map.jpg') no-repeat;
+    margin-bottom: 67px;
+  }
+}
