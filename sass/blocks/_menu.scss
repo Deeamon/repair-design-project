@@ -1,14 +1,16 @@
 @import "../core/settings";
+@import "../blocks/btn";
 
-.header{
-  height: 9.90%;
+.menu{
+  padding: 24px 0;
   background-color: #131313;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  .logo{
+
+  &__logo{
     @include font-props('FuturaDemiC', 14px, 16px, #E3B873);
     text-transform: uppercase; 
     cursor: pointer; 
@@ -36,10 +38,10 @@
     }
   }
 
-  .contacts{   
+  &__contacts{   
     width: 32.17%;  //437px
 
-    &__link{
+    .contacts__link{
       @include font-props('FuturaDemiC', 14px, 16px, #E3B873); 
       text-decoration: underline;
       text-transform: uppercase;
@@ -48,4 +50,12 @@
     }
 
   }
+}
+
+.menu--footer{
+  background-color: #131313;
+
+  .menu__contacts{   
+    width: auto;
+  }  
 }
