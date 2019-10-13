@@ -1,0 +1,52 @@
+@import "../core/settings";
+
+.footer{
+  background-color: #131313;
+
+  &__inner{
+    padding: 48px 0;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    .logo{
+      @include font-props('FuturaDemiC', 14px, 16px, #E3B873);
+      text-transform: uppercase; 
+      cursor: pointer; 
+    }
+  
+    .nav{
+      display: flex;
+      justify-content: space-between;
+  
+      &__link{
+        @include font-props('FuturaBookC', 14px, 16px, #FFFFFF); 
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-right: 47px;
+      }
+  
+      &__link:last-child{
+        margin-right: 0;
+      }
+  
+      &__link:hover,
+      &__link.active{
+        color: #E3B873;
+        cursor: pointer;
+      }
+    }
+  
+  }
+
+  &__contacts{   
+    .contacts__link{
+      @include font-props('FuturaDemiC', 14px, 16px, #E3B873); 
+      text-decoration: underline;
+      text-transform: uppercase;
+
+      margin-right: 45px;
+    }
+  }
+}
