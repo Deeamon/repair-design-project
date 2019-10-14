@@ -26,6 +26,11 @@
 
 .paragraph--team{
   .paragraph__text{
-    padding-top: 0;
+    padding: 0 0 45px;
+  }
+
+  .paragraph__text::before{
+    margin-bottom: 10px;
   }
 }
+

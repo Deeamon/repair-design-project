@@ -34,6 +34,11 @@
     margin-left: -43px;
     z-index: 3;
 
+    transition: background-color .1s linear;
+  }
+
+  .icon-play:hover{
+    background-color: darken($color: #E3B873, $amount: 15%);
   }
 
 }

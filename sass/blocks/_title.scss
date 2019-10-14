@@ -4,12 +4,24 @@
 
   background-color: #fff;
 
-  .title__inner{
+  .title__inner,
+  .title__inner--project,
+  .title__inner-clients{
     margin-top: 50px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .title__inner--project{
+    margin-top: 30px;
+  }
+
+  .title__inner-clients{
+    .title__subtitle{
+      padding-bottom: 25px;
+    }
   }
 
   &__title{
@@ -22,11 +34,16 @@
     margin: 13px 0 20px;
   }
   
-  &__subtitle{
+  &__subtitle,
+  &__subtitle--team{
     width: 670px;
     padding-bottom: 40px;
     text-align: center;
     @include font-props('FuturaBookC', 20px, 27px, #363636);
+  }
+
+  &__subtitle--team{
+    padding-bottom: 80px;
   }
 
   &--black{

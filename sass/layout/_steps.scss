@@ -29,7 +29,7 @@
     &__number{
       @include font-props('Yeseva One', 18px, 25px, #ffffff);
       text-transform: uppercase;
-      padding-bottom: 22px;
+      padding-bottom: 10px;
     }
 
     &__title2{
@@ -46,7 +46,7 @@
   }
 
   &__picture{
-    margin-top: 280px;
+    margin-top: 310px;
     flex: 1 0 60.8926%;
   }
 
@@ -85,6 +85,6 @@
   &__photo{
    display: block;
    width: 91.4444%;
-   margin-bottom: 95px;
+   margin: 25px 0 70px;
   }
 }

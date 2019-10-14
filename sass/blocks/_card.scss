@@ -5,7 +5,7 @@
 .card--design,
 .card--team{
   &__inner{
-    padding-top: 31px;
+    // padding-top: 31px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -98,12 +98,14 @@
 
   .item__description{
     width: 234px;
-    padding: 25px 0 55px;
+    padding: 25px 0 35px;
     margin-left: -117px;
+    top: 75%;
   
 
     .description__title{
       text-align: center;
+      margin: 0;
     }
 
     .description__text{
@@ -115,6 +117,7 @@
       width: 100%;
       @include font-props('Yeseva One', 13px, 20px, #FFFFFF);
       text-transform: uppercase;
+      padding: 10px 21px;
     }
   }
 }
