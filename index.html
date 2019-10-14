@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Repair design project</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="icomoon/style.css">
   <link rel="stylesheet" href="dist/styles.css">
 </head>
@@ -25,7 +24,7 @@
           <div class="section__inner">
     
             <div class="menu">
-              <div class="menu__logo">IC "Repair Design Project"</div>
+              <a href="#" class="menu__logo">IC "Repair Design Project"</a>
               <div class="nav"> 
                 <a class="nav__link active" href="#">Home</a>
                 <a class="nav__link" href="#">Project</a>
@@ -36,7 +35,7 @@
               </div>
               <div class="menu__contacts">
                 <a class="contacts__link" href="tel:+79287683239">+7(928)768-32-39</a>
-                <button class="btn btn--call">Request a call</button>
+                <button class="btn btn--call" type="button">Request a call</button>
               </div>
             </div>
     
@@ -44,11 +43,11 @@
               <h1 class="section__title">Turnkey Repair in the city of <span>Rostov-on-Don</span></h1>
               <h2 class="section__subtitle">Get ready-made turnkey repairs on time with work time saving up to 45 days and 20% from cost of materials due to the organization of work</h2>
               <div class="section__btn">
-                <button class="btn btn--intro active">Calculate the cost</button>
-                <button class="btn btn--intro">Submit your application</button>
+                <button class="btn btn--intro active" type="button">Calculate the cost</button>
+                <button class="btn btn--intro" type="button">Submit your application</button>
               </div>
             </div>
-          </div> <!--intro__inner-->
+          </div>
         </section>
 
       </div>
@@ -62,9 +61,7 @@
       
         <a class="about__scroll-down" href="#">
           Scroll down
-          <div class="circle">
-            <i class="fas fa-angle-down"></i>
-          </div>
+          <span class=" icon-arrow-circle"></span>
         </a>
 
         <div class="about__nav">
@@ -78,7 +75,7 @@
       <div class="about__gallery">
 
         <div class="gallery">
-          <h3 class="gallery__title">Completed projects</h3>
+          <h3 class="gallery__title">Completed <span>projects</span></h3>
           <div class="gallery__description">
             Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families
           </div>
@@ -101,14 +98,24 @@
             </div>
 
           </div>
-        </div> <!--gallery-->
+          <div class="gallery__slider">
+            
+              <span class="icon-arrow-long rotate-arrow"></span>
+            
+            <div class="circle active"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <span class="icon-arrow-long"></span>
+          </div>
+        </div> 
 
         <div class="gallery__photo">
           <img class="gallery__frame" src="assets/img/gallery-1.jpg" alt="example of decor">
           <img class="gallery__frame" src="assets/img/gallery-2.jpg" alt="example of decor">
+          <span class="icon-arrow"></span>
         </div>
       
-    </div>  <!--about__gallery-->
+    </div>  
   </div>
     </div> <!--container-->
   </section> <!--about-->
@@ -129,7 +136,8 @@
   <div class="control">
     <div class="container">
       <div class="control__inner">
-        <video class="control__video" src="#" poster="assets/img/poster.jpg" width="817px" height="434px"></video>
+        <video class="control__video" src="#" poster="assets/img/poster.jpg" width="817" height="434"></video>
+        <span class="icon-play"></span>
       </div>
     </div>
   </div>
@@ -149,19 +157,19 @@
 
       <div class="form__field--request">
         <div class="form">
-            <label class="form__label" for="form__field">Name</label>
-            <input class="form__input" type="text" id="form__field" placeholder="What is your name:">
+            <label class="form__label" for="form__name">Name</label>
+            <input class="form__input" type="text" id="form__name" placeholder="What is your name:">
         </div>
         <div class="form">
-            <label class="form__label" for="form__field">Phone</label>
-            <input class="form__input" type="tel" id="form__field" placeholder="Your phone number:">
+            <label class="form__label" for="form__phone">Phone</label>
+            <input class="form__input" type="tel" id="form__phone" placeholder="Your phone number:">
         </div>
 
         <button class="form__btn" type="submit">Submit</button>
       </div> <!--request__form-->
 
       <div class="checkbox">
-        <input type="checkbox" class="checkbox__flag" id="checkbox" >
+        <input type="checkbox" class="checkbox__flag" id="checkbox" name="agree" >
         <label class="checkbox__name" for="checkbox">I agree to the processing of personal data</label>
       </div>
 
@@ -253,8 +261,7 @@
       <div class="measurer__inner">
 
         <div class="measurer__circle">
-          <div class="circle"></div>
-
+          <div class="circle"></div> 
           <div class="circle__item--first">
             <div class="circle__icon">01</div>
             <div class="circle__text">Our specialist will arrive for measurements per day contact, or appoint a date convenient for you</div>
@@ -278,16 +285,16 @@
           <div class="form__field">
             <div class="form__title">Leave a request for free departure of the measurer</div>
             <div class="form--measurer">
-                <label class="form__label--measurer" for="form__field">Name</label>
-                <input class="form__input--measurer" type="text" id="form__field" placeholder="What is your name:">
+                <label class="form__label--measurer" for="form__name--measurer">Name</label>
+                <input class="form__input--measurer" type="text" id="form__name--measurer" placeholder="What is your name:">
             </div>
             <div class="form--measurer">
-                <label class="form__label--measurer" for="form__field">Phone</label>
-                <input class="form__input--measurer" type="tel" id="form__field" placeholder="Your phone number:">
+                <label class="form__label--measurer" for="form__phone--measurer">Phone</label>
+                <input class="form__input--measurer" type="tel" id="form__phone--measurer" placeholder="Your phone number:">
             </div>
             <div class="form--measurer">
-                <label class="form__label--measurer" for="form__field">Email</label>
-                <input class="form__input--measurer" type="email" id="form__field" placeholder="Your email:">
+                <label class="form__label--measurer" for="form__email--measurer">Email</label>
+                <input class="form__input--measurer" type="email" id="form__email--measurer" placeholder="Your email:">
             </div>
             <button class="form__btn--measurer" type="submit">Call the measurer</button>
           </div>
@@ -439,10 +446,20 @@
           <div class="info__number">1/6</div>
           <h4 class="info__title2">Departure for measurements premises</h4>
           <div class="info__text">After your call, we go to you to consult and measure the premises of your apartment. During our meeting, you can ask absolutely any number of questions. An appraiser-appraiser leaves to measure the room. He will advise you on the issues of repair technology, apartment design, terms of repair of the apartment as a whole and its individual stages.</div>
+           <div class="gallery__slider--steps">
+            <span class="icon-arrow-long rotate-arrow"></span>
+            <div class="circle active"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <span class="icon-arrow-long"></span>
+          </div> 
         </div>
         <div class="steps__picture">
           <div class="steps__point">
-            <div class="point">
+            <div class="point active">
               <div class="point__num">01</div>
               <div class="point__text">Departure to room measurements</div>
             </div>
@@ -648,7 +665,7 @@
     </div>
   </div>
 
-  <!--form--questions-->
+  <!--form__questions-->
   <div class="form--questions">
     <div class="container">
       <div class="form__inner">
@@ -656,38 +673,38 @@
           <div class="form__title--questions">have any questions?</div>
           <div class="form__group--questions">
             <div class="group__item">
-                <label class="form__label--measurer" for="form__field">Name</label>
-                <input class="form__input--measurer" type="text" id="form__field" placeholder="What is your name:">
+                <label class="form__label--measurer" for="form__name--questions">Name</label>
+                <input class="form__input--measurer" type="text" id="form__name--questions" placeholder="What is your name:">
             </div>
             <div class="group__item">
-                <label class="form__label--measurer" for="form__field">Phone</label>
-                <input class="form__input--measurer" type="tel" id="form__field" placeholder="Your phone number:">
+                <label class="form__label--measurer" for="form__phone--questions">Phone</label>
+                <input class="form__input--measurer" type="tel" id="form__phone--questions" placeholder="Your phone number:">
             </div>
           </div>
           <div class="form__email">
-              <label class="form__label--measurer" for="form__field">Email</label>
-              <input class="form__input--measurer" type="email" id="form__field" placeholder="Your email:">
+              <label class="form__label--measurer" for="form__email--questions">Email</label>
+              <input class="form__input--measurer" type="email" id="form__email--questions" placeholder="Your email:">
           </div>
 
           <div class="checkbox--question">
-              <input type="checkbox" class="checkbox__flag" id="checkbox" >
-              <label class="checkbox__name" for="checkbox">I agree to the processing of personal data</label>
+              <input type="checkbox" class="checkbox__flag" id="question" name="agree">
+              <label class="checkbox__name" for="question">I agree to the processing of personal data</label>
           </div>
 
           <button class="form__btn--questions" type="submit">Submit</button>
         </div>
       </div>
     </div>
-  </div><!--form--questions-->
+  </div><!--form__questions-->
 
   <!--contacts-->
   <div class="contacts">
     <div class="container">
       <div class="contacts__inner">
-        <div class="contacts__text">Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29</div>
+        <div class="contacts__text">Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel <a href="tel:+79287683239">+7 (928) 768 32 29</a></div>
         <div class="contacts__icon">
-          <span class="icon-mail"></span>
-          <span class="icon-instagram"></span>
+          <a href="#" class="icon"><span class="icon-mail"></span></a>
+          <a href="#" class="icon"><span class="icon-instagram"></span></a> 
         </div>
       </div>
     </div>
@@ -706,7 +723,7 @@
   <div class="menu--footer">
       <div class="container">
           <div class="menu">
-              <div class="menu__logo">IC "Repair Design Project"</div>
+            <a href="#" class="menu__logo">IC "Repair Design Project"</a>
               <div class="nav"> 
                 <a class="nav__link active" href="#">Home</a>
                 <a class="nav__link" href="#">Project</a>
@@ -716,7 +733,7 @@
                 <a class="nav__link" href="#">contacts</a>    
               </div>
               <div class="menu__contacts">
-                <a class="contacts__link" href="#">+7(928)768-32-39</a>
+                <a class="contacts__link" href="tel:+79287683239">+7(928)768-32-39</a>
                 <button class="btn btn--call">Request a call</button>
               </div>
             </div>

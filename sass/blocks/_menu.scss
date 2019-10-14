@@ -12,7 +12,8 @@
 
   &__logo{
     @include font-props('FuturaDemiC', 14px, 16px, #E3B873);
-    text-transform: uppercase; 
+    text-transform: uppercase;
+    text-decoration: none; 
     cursor: pointer; 
   }
 
@@ -39,7 +40,7 @@
   }
 
   &__contacts{   
-    width: 32.17%;  //437px
+    margin-right: 5.69%;
 
     .contacts__link{
       @include font-props('FuturaDemiC', 14px, 16px, #E3B873); 
@@ -58,9 +59,9 @@
 }
 
 .menu--footer{
-  background-color: #131313;
+  background-color: #131313; 
 
-  .menu__contacts{   
-    width: auto;
-  }  
+  .menu__logo{
+    margin-left: 5.69%;
+  }
 }

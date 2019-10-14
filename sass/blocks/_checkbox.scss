@@ -19,3 +19,31 @@
     color: white;
   }
 }
+
+input[type='checkbox']{
+  display: none;
+}
+
+input[type='checkbox'] + label{
+  padding-left: 20px;  
+}
+
+input[type='checkbox'] + label::before{
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #E3B873;
+  vertical-align: middle;
+  margin-right: 9px;
+
+  transition: background-image .2s linear;
+}
+
+input[type='checkbox']:checked + label::before{
+  background: url(../../assets/img/check.png) 0px 2px no-repeat,#E3B873;
+  background-size: 16px auto;
+
+}
+
+// icon-check

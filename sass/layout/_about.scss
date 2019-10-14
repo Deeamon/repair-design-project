@@ -1,4 +1,5 @@
 @import "../core/settings";
+@import "../blocks/slider";
 
 .about{
   background-color: #131313;
@@ -11,15 +12,24 @@
   
   &__scroll-down{
     display: inline-block;
-    padding: 34px 48px;
+    padding: 30px 48px;
     background-color: #131313;
 
     @include font-props("Yeseva One", 14px, 19px, #FFFFFF);
     text-transform: uppercase;
     text-decoration: none;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span{
+      font-size: 29px;
+      margin-left: 22px;
+    }
+
     position: absolute;
-    top: -120px;
+    top: -85px;
     left: -10px;
     z-index: 1;
 
@@ -28,26 +38,6 @@
     &:hover{
       color: #E3B873;
     }
-
-
-    .circle{
-      display: inline-block;
-      box-sizing: border-box;
-      width: 29px;
-      height: 29px;
-
-      border: 2px solid #E3B873;
-      border-radius: 100%;
-      margin-left: 12px;
-      
-      i{
-        color: #E3B873;
-        font-size: 16px;
-        padding: 6px;
-      }
-
-    }
-
     
   }
 
@@ -68,12 +58,14 @@
       &__item{
         @include font-props("Yeseva One", 14px, 19px, rgba(255, 255, 255, 0.3));
         text-transform: uppercase;
-        text-decoration: none;
+        text-decoration: none; 
+
+        margin: 0 60px 45px 0;
+        padding-bottom: 5px;
+        border-bottom: 1px solid transparent;
 
         transition: color .1s linear;
-        transition: text-decoration .1s linear;
-        padding-right: 60px;
-        padding-bottom: 53px;
+        transition: border-bottom .1s linear;
       }
 
       &__item:last-child{
@@ -83,7 +75,7 @@
       &__item:hover,
       &__item.active{
         color: #E3B873;
-        text-decoration: underline;
+        border-bottom: 1px solid #E3B873;
       }
     }
   }
@@ -103,8 +95,22 @@
       &__title{
         @include font-props("Yeseva One", 27px, 37px, #E3B873);
         text-transform: uppercase;
-        margin-bottom: 34px;
-        width: 160px;
+        margin-bottom: 18px;
+
+        span{
+          display: block;
+        }
+
+        span::after{
+          content: '';
+          display: inline-block;
+          box-sizing: border-box;
+          margin-left: 35px;
+          margin-bottom: 8px;
+          width: 92px;
+          height: 1px;
+          background: #E3B873; 
+        }
       }
 
       &__description{
@@ -121,7 +127,7 @@
 
         .list{
           flex: 1 1 50%;
-          margin-bottom: 34px;
+          margin-bottom: 32px;
 
           &__title{
             @include font-props("Yeseva One", 18px, 25px, #E3B873);
@@ -135,7 +141,7 @@
           }
         }
       }
-
+        
     }
 
     .gallery__photo{
@@ -146,10 +152,33 @@
 
       overflow: hidden;
 
+      position: relative;
+
       .gallery__frame{
         margin-right: 20px;
+      }
+
+      span{
+        display: block;
+        cursor: pointer;
+        width: 54px;
+        height: 54px;
+        font-size: 18px;
+        text-align: center;
+        line-height: 3;
+
+        background-color: #E3B873;
+        border-radius: 50%;
+        box-shadow: 0px 0px 15px rgba(227, 184, 115, 0.5);
+
+        position: absolute;
+        top: 50%;
+        margin-top: -27px;
+        right: 45px;
+        z-index: 2;
       }
     }
 
   }
 }
+

@@ -1,0 +1,38 @@
+@import "../core/settings";
+
+
+.gallery__slider,
+.gallery__slider--steps{
+  display: flex;
+  align-items: center;
+  margin-top: 14px;
+
+  span{
+    display: inline-block;
+    margin-left: 12px;
+    cursor: pointer;
+  }
+  .circle{
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-right: 17px;
+
+    cursor: pointer;
+  }
+
+  .circle.active{
+    background: #ffffff;
+  }
+
+  .rotate-arrow{
+    transform: rotate(180deg);
+    margin-right: 29px;
+    margin-left: 0;
+  }
+}
+
+.gallery__slider--steps{
+  margin-top: 65px;
+}

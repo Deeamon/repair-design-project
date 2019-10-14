@@ -19,6 +19,7 @@
     position: relative;
     
     .circle{
+     
       height: 92%;
       width: 74%;
       border-right: 3px solid #E3B873;
@@ -104,11 +105,24 @@
     width: 509px;
     margin: 37px auto 0;
     display: flex;
+
     .discount__text{
       width: 230px;
       padding-top: 13px;
       @include font-props('FuturaDemiC', 20px, 25px, #E3B873);
       text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+    }
+
+    .icon-piggy{
+      display: block;
+      width: 72px;
+      height: 72px;
+      background-color: #E3B873;
+      border-radius: 50%;
+      font-size: 35px;
+      line-height: 2;
+      text-align: center;
+      margin-right: 25px;
     }
   }
 }

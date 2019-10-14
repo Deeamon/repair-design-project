@@ -18,8 +18,6 @@
 
   &__field,
   &__field--questions{
-    // width: 509px;
-    // height: 506px;
     margin: 20% auto 0;
 
     background-color: #131313;
@@ -28,7 +26,6 @@
 
   &__field--questions{
     width: 883px;
-    // height: 446px;
     margin: 200px auto 0;
   }
 
@@ -110,9 +107,15 @@
     @include font-props('FuturaMediumC', 18px, 25px, #FFFFFF);
   }
 
-  &__input--measurer:focus{
+  &__input--measurer:focus,
+  &__input:focus{
     outline: 0;
     border-color: #E3B873;
+  }
+
+  &__input:focus::placeholder,
+  &__input--measurer:focus::placeholder{
+    color: transparent;
   }
 
   &__btn{
@@ -141,20 +144,28 @@
       transition: background-color .1s linear;
     }
 
+    &--measurer{
+      margin-bottom: 27px;
+    }
+
     &--questions{
       width: 200px;
       padding: 20px 54px;
       margin: 0 341px 53px;
     }
 
-    &--measurer:hover,
-    &--questions:hover{
-      background-color: darken($color: #E3B873, $amount: 15%);
-    }
-
+  }
+  &__btn:hover,
+  &__btn--measurer:hover,
+  &__btn--questions:hover{
+    background-color: darken($color: #E3B873, $amount: 15%);
   }
 
-
+  &__btn:focus,
+  &__btn--measure:focus,
+  &__btn--questions:focus{
+    outline: 0;
+  }
   
 
 }
