@@ -65,3 +65,19 @@
     margin-left: 5.69%;
   }
 }
+
+@media(max-width: 575px){
+  .menu{
+    .nav{
+      display: none;
+    }
+
+    &__contacts{
+      margin-right: 0;
+
+      .contacts__link{
+        margin-right: 0;
+      }
+    }
+  }
+}

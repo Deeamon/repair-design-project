@@ -39,3 +39,23 @@
 .btn:focus{
   outline: 0;
 }
+
+@media(max-width: 575px){
+
+  .btn{
+
+    &--call{
+      display: none;
+    }
+  
+    &--intro{
+      width: 100%;
+      font-size: 13px;
+      line-height: 15px;
+    }
+
+    &--intro + &--intro{
+      margin-top: 26px;
+    }
+  }
+}

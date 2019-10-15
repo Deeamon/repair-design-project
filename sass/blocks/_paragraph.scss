@@ -6,7 +6,7 @@
   &__text{
     display: block;
     margin: 0 auto;
-    width: 680px;
+    max-width: 680px;
   
     @include font-props('FuturaBookC', 20px, 34px, #363636); 
     text-align: center;
