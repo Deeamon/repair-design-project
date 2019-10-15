@@ -116,7 +116,6 @@
       }
 
       &__description{
-        width: 442px;
         @include font-props("FuturaBookC", 18px, 29px, #ffffff);
         margin-bottom: 42px;
         width: 420px;
@@ -190,3 +189,46 @@
   }
 }
 
+@media(max-width: 575px){
+  .about{
+    &__scroll-down,
+    &__nav{
+      display: none;
+    }
+
+    &__gallery{
+      height: auto;
+      display: block;
+      // flex-direction: column;
+      .gallery{
+        width: 100%; 
+        padding: 0;
+        
+        &__title{
+        width: 100%;
+        text-align: center;
+        font-size: 22px;
+        line-height: 138.6%;
+        margin-bottom: 22px;
+          span::after{
+            display: none;
+          }
+        }
+
+        &__description{
+          width: 90%;
+          text-align: center;
+          margin: 0 auto;
+          font-size: 14px;
+          line-height: 158.48%;
+          margin-bottom: 36px;
+        }
+
+        &__frame{
+          margin: 0 auto;
+          width: 90%;
+        }
+     }
+    }
+  }
+}

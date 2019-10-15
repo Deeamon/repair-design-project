@@ -36,3 +36,10 @@
 .gallery__slider--steps{
   margin-top: 110px;
 }
+
+@media(max-width: 575px){
+  .gallery__slider,
+  .gallery__slider--steps{
+    display: none;
+  }
+}
