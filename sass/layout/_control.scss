@@ -3,13 +3,13 @@
 .control{
   background-color: $nero;
 
-  &__inner{
+  .control__inner{
     height: 215px;
     width: 100%;
     position: relative;
   }
 
-  &__video{
+  .control__video{
     position: absolute;
     top: 0%;
     left: 50%;
@@ -35,11 +35,12 @@
     z-index: 3;
 
     @include transition(background-color);
+
+    &:hover{
+      background-color: $maize-dark;
+    }
   }
 
-  .icon-play:hover{
-    background-color: $maize-dark;
-  }
 
 }
 
