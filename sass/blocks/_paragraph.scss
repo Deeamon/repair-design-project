@@ -1,8 +1,7 @@
 @import "../core/settings";
 
 
-.paragraph,
-.paragraph--team{
+.paragraph{
   &__text{
     display: block;
     margin: 0 auto;
@@ -11,26 +10,27 @@
     @include font-props('FuturaBookC', 20px, 34px, $gondola); 
     text-align: center;
     padding-top: 265px; 
+
+    &::before{
+      content: "";
+      display: block;
+      margin: 0 auto;
+      width: 54px;
+    
+      border-bottom: 2px solid $maize;
+      margin-bottom: 35px;
+    }
   }
   
-  &__text::before{
-    content: "";
-    display: block;
-    margin: 0 auto;
-    width: 54px;
-  
-    border-bottom: 2px solid $maize;
-    margin-bottom: 35px;
+  &--team{
+    .paragraph__text{
+      padding: 0 0 45px;
+
+      &::before{
+        margin-bottom: 10px;
+      }
+    } 
   }
 }
 
-.paragraph--team{
-  .paragraph__text{
-    padding: 0 0 45px;
-  }
-
-  .paragraph__text::before{
-    margin-bottom: 10px;
-  }
-}
 
