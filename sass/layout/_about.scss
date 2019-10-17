@@ -3,19 +3,17 @@
 
 .about{
   background-color: $nero;
-  height: 660px;
   
-  &__inner{
-
+  .about__inner{
     position: relative;
   }
   
-  &__scroll-down{
+  .about__scroll-down{
     display: inline-block;
-    padding: 30px 48px;
+    
+    @include font-props("Yeseva One", 0.88rem, 1.19rem, $white, uppercase);
     background-color: $nero;
-
-    @include font-props("Yeseva One", 14px, 19px, $white, uppercase);
+    padding: 2em 3.4em;
     text-decoration: none;
 
     display: flex;
@@ -23,64 +21,24 @@
     align-items: center; 
 
     position: absolute;
-    top: -85px;
-    left: -10px;
+    top: -6em;
+    left: -0.7em;
     z-index: 1;
 
     @include transition(color);
 
+    &:hover{
+      color: $maize;
+    }
+
     .icon-arrow-circle{
-      font-size: 29px;
-      margin-left: 22px;    
+      font-size: 1.8rem;
+      margin-left: 0.76em;    
     }
     
   }
 
-  &__scroll-down:hover{
-    color: $maize;
-  }
-
-
-
-  &__nav{
-    width: 100%;
-    height: 128px;
-
-    display: flex;
-    justify-content: flex-end;
-
-    .navbar{
-      height: 100%;
-      width: 58.88%; //848
-
-      display: flex;
-      align-items: flex-end;
-      
-      &__item{
-        @include font-props("Yeseva One", 14px, 19px, $third-transparent, uppercase);
-        text-decoration: none; 
-
-        margin: 0 60px 45px 0;
-        padding-bottom: 5px;
-        border-bottom: 1px solid transparent;
-
-        @include transition(color);
-        @include transition(border-bottom);
-      }
-
-      &__item:last-child{
-        padding-right: 0;
-      }
-
-      &__item:hover,
-      &__item.active{
-        color: $maize;
-        border-bottom: 1px solid $maize;
-      }
-    }
-  }
-
-  &__gallery{
+  .about__gallery{
     width: 100%;
     height: 438px;
     display: flex;
@@ -92,33 +50,34 @@
       padding-left: 60px;
 
 
-      &__title{
+      .gallery__title{
         @include font-props("Yeseva One", 27px, 37px, $maize, uppercase);
         margin-bottom: 18px;
 
-        span{
+        .wrap-word{
           display: block;
+          
+          &::after{
+            content: '';
+            display: inline-block;
+            box-sizing: border-box;
+            margin-left: 35px;
+            margin-bottom: 8px;
+            width: 92px;
+            height: 1px;
+            background: $maize; 
+          }
         }
 
-        span::after{
-          content: '';
-          display: inline-block;
-          box-sizing: border-box;
-          margin-left: 35px;
-          margin-bottom: 8px;
-          width: 92px;
-          height: 1px;
-          background: $maize; 
-        }
       }
 
-      &__description{
+      .gallery__description{
         @include font-props("FuturaBookC", 18px, 29px, $white);
         margin-bottom: 42px;
         width: 420px;
       }
 
-      &__list{  
+      .gallery__list{  
         display: flex;
         flex-wrap: wrap;
         width: 370px;
@@ -184,6 +143,7 @@
 
   }
 }
+
 
 @media(max-width: 575px){
   .about{

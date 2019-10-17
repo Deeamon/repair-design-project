@@ -5,19 +5,21 @@
 .gallery__slider--steps{
   display: flex;
   align-items: center;
-  margin-top: 14px;
+  margin-top: 2%;
 
   span{
     display: inline-block;
-    margin-left: 12px;
     cursor: pointer;
+
+    font-size: 1rem;
+    margin-left: 0.75em;
   }
   .circle{
     width: 9px;
     height: 9px;
     border-radius: 50%;
     background-color: $third-transparent;
-    margin-right: 17px;
+    margin-right: 1em;
 
     cursor: pointer;
   }
@@ -28,13 +30,13 @@
 
   .rotate-arrow{
     transform: rotate(180deg);
-    margin-right: 29px;
+    margin-right: 1.8em;
     margin-left: 0;
   }
 }
 
 .gallery__slider--steps{
-  margin-top: 110px;
+  margin-top: 30%;
 }
 
 @media(max-width: 575px){

@@ -5,7 +5,6 @@
 .card--design,
 .card--team{
   &__inner{
-    // padding-top: 31px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -28,10 +27,8 @@
     &__description{
       box-sizing: border-box;
       width: 330px;
-      // min-height: 286px;
       background-color: $white;
-      box-shadow: 10px 10px 20px $black-semi-transparent;
-      padding: 25px 0 55px 34px;
+      @include box-shadow(0.6rem, 0.6rem, 1.25rem, $black-semi-transparent);
             
       position: absolute;
       top: 70%;
@@ -41,30 +38,31 @@
     }
 
     .description__title{
-      @include font-props('Yeseva One', 18px, 25px, $gondola);
-      margin-bottom: 13px;
-    }
-  
-    .description__list{
-      padding-left: 16px; 
+      @include font-props('Yeseva One', 1.1rem, 1.5rem, $gondola);
+      margin: 1.3em 0 0.7em 3em;
     }
   
     .description__item{
       list-style-type: disc;
-      @include font-props('FuturaBookC', 15px, 25px, $suva-grey);
+      @include font-props('FuturaBookC', 0.9rem, 1.5rem, $suva-grey);
+      margin-left: 4.6em; 
+      &:last-child{
+        margin-bottom: 2.3em;
+      }
     }
 
     .description__key{
       box-sizing: border-box;
-      @include font-props('Yeseva One', 18px, 25px, $white, uppercase);
+      @include font-props('Yeseva One', 1.1rem, 1.5rem, $white, uppercase);
       background-color: $maize;
-      box-shadow: 5px 5px 10px $maize-third-transparent;
-      padding: 17px 21px;
-  
+      padding: 1em 1.2em;
+      
       position: absolute;
-      bottom: -30px;
+      bottom: -1.6em;
       left: 0;
       z-index: 2;
+
+      @include box-shadow(0.3rem, 0.3rem, 0.6rem, $maize-third-transparent);
     }
   }  
 }
@@ -81,17 +79,17 @@
     width: 70px;
     height: 70px;
     background-color: $maize;
-    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5);
+    @include box-shadow(0px, 5px, 20px, $maize-semi-transparent);
 
-    font-size: 44px;
+    font-size: 2.7rem;
+    line-height: 4.4rem;
     text-align: center;
-    line-height: 70px;
 
     position: absolute;
     top: 0;
     left: 50%;
-    margin-left: -170px;
-    margin-top: -35px;
+    margin-left: -3.8em;
+    margin-top: -0.8em;
     z-index: 3;
   }
 
@@ -104,18 +102,18 @@
 
     .description__title{
       text-align: center;
-      margin: 0;
+      // margin: 25px;
     }
 
     .description__text{
       text-align: center;
-      @include font-props('FuturaBookC', 18px, 26px, $suva-grey);
+      @include font-props('FuturaBookC', 1.1rem, 1.6rem, $suva-grey);
     }
 
     .description__key{
       width: 100%;
-      @include font-props('Yeseva One', 13px, 20px, $white, uppercase);
-      padding: 10px 21px;
+      @include font-props('Yeseva One', 1.2rem, 1.25rem, $white, uppercase);
+      padding: 0.7em 1.6em;
     }
   }
 }
