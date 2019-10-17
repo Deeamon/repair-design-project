@@ -18,7 +18,7 @@
     margin: 0 auto;
     width: 376px;
     background: $white;
-    box-shadow: 0px 10px 50px $black-semi-transparent;
+    @include box-shadow(0px, 10px, 50px, $black-semi-transparent);
     padding: 41px 32px 90px 20px;
     box-sizing: border-box;
     position: relative;

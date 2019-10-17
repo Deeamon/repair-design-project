@@ -16,3 +16,15 @@ $transparent: rgba(255, 255, 255, 0);
 $quarter-transparent: rgba(255, 255, 255, 0.15);
 $third-transparent: rgba(255, 255, 255, 0.3);
 $semi-transparent: rgba(255, 255, 255, 0.5);
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
