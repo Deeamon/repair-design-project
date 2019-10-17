@@ -3,7 +3,7 @@
 .fantasy{
   margin-top: 129px;
 
-  &__inner{
+  .fantasy__inner{
     box-sizing: border-box;
     height: 1100px;
     width: 100%;
@@ -13,7 +13,7 @@
     overflow: hidden;
   }
 
-  &__list{
+  .fantasy__list{
     flex: 1 0 33.3333%;
     height: 100%;
 
@@ -26,30 +26,30 @@
     .list{
       width: max-content;
       margin: 0 0 0 100px;
-    }
-    .list__item{
-      display: block;
-      cursor: pointer;
-      margin-bottom: 12px;
-      @include font-props("ProximaNova", 20px, 34px, $white);
-      padding-bottom: 3px;
-      border-bottom: 1px solid transparent;
 
-      @include transition(color);
-      @include transition(border-bottom);
-    }
+      .list__item{
+        display: block;
+        cursor: pointer;
+        margin-bottom: 12px;
+        @include font-props("ProximaNova", 20px, 34px, $white);
+        padding-bottom: 3px;
+        border-bottom: 1px solid transparent;
+  
+        @include transition(color);
+        @include transition(border-bottom);
 
-    .list__item:hover,
-    .list__item.active{
-      color: $maize;
-      padding-bottom: 3px;
-      border-bottom: 1px solid $maize;
+        &:hover,
+        &.active{
+          color: $maize;
+          padding-bottom: 3px;
+          border-bottom: 1px solid $maize;
+        }
+      }     
     }
-
   }
 
 
-  &__gallery{
+  .fantasy__gallery{
     flex: 1 0 66.6667%;
     height: 100%;
     width: 100%;
@@ -71,7 +71,7 @@
         width: 100%;
         padding: 70px 0 40px;
 
-        img{
+        .col__img{
           height: 100%;
           margin-left: -40%;
         }
@@ -81,7 +81,7 @@
         height: 350px;
         width: 100%;
 
-        img{
+        .col__img{
           height: 100%;
         }
       } 
@@ -91,7 +91,7 @@
         width: 100%;
         padding-bottom: 40px;
 
-        img{
+        .col__img{
           height: 100%;
         }
       } 
@@ -100,7 +100,7 @@
         height: 626px;
         width: 100%;
 
-        img{
+        .col__img{
           height: 100%;
         }
       } 
