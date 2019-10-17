@@ -10,7 +10,7 @@
   align-items: center;
 
 
-  &__logo{
+  .menu__logo{
     @include font-props('FuturaDemiC', 14px, 16px, #E3B873);
     text-transform: uppercase;
     text-decoration: none; 
@@ -21,25 +21,26 @@
     display: flex;
     justify-content: space-between;
 
-    &__link{
+    .nav__link{
       @include font-props('FuturaBookC', 14px, 16px, #FFFFFF); 
       text-decoration: none;
       text-transform: uppercase;
       margin-right: 47px;
+
+      &:last-child{
+        margin-right: 0;
+      }
+  
+      &:hover,
+      &.active{
+        color: #E3B873;
+        cursor: pointer;
+      }
     }
 
-    &__link:last-child{
-      margin-right: 0;
-    }
-
-    &__link:hover,
-    &__link.active{
-      color: #E3B873;
-      cursor: pointer;
-    }
   }
 
-  &__contacts{   
+  .menu__contacts{   
     margin-right: 5.69%;
 
     .contacts__link{
@@ -48,7 +49,7 @@
       text-transform: uppercase;
       margin-right: 45px;
 
-      transition: border-bottom .1s linear; 
+      @include transition(border-bottom); 
     }
 
     .contacts__link:hover{
@@ -56,12 +57,12 @@
     }
 
   }
-}
 
-.menu--footer{
-  background-color: #131313; 
-
-  .menu__logo{
-    margin-left: 5.69%;
+  &--footer{
+    background-color: #131313; 
+  
+    .menu__logo{
+      margin-left: 5.69%;
+    }
   }
 }
