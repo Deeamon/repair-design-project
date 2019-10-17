@@ -4,46 +4,44 @@
 
   background-color: $white;
 
-  .title__inner,
-  .title__inner--project,
-  .title__inner-clients{
+  .title__inner{
     margin-top: 50px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
 
-  .title__inner--project{
-    margin-top: 30px;
-  }
-
-  .title__inner-clients{
-    .title__subtitle{
-      padding-bottom: 25px;
+    &--project{
+      margin-top: 30px;
+    }
+  
+    &-clients{
+      .title__subtitle{
+        padding-bottom: 25px;
+      }
     }
   }
 
-  &__title{
+  .title__title{
     @include font-props('Yeseva One', 20px, 28px, $nero-lighter, uppercase);
   }
   
-  &__icon{
+  .title__icon{
     font-size: 30px;
     margin: 13px 0 20px;
   }
   
-  &__subtitle,
-  &__subtitle--team{
+  .title__subtitle{
     width: 670px;
     padding-bottom: 40px;
     text-align: center;
     @include font-props('FuturaBookC', 20px, 27px, $gondola);
+
+    &--team{
+      padding-bottom: 80px;
+    }
   }
 
-  &__subtitle--team{
-    padding-bottom: 80px;
-  }
 
   &--black{
     background-color: $nero;
