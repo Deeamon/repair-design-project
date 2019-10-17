@@ -1,10 +1,8 @@
 @import "../core/settings";
 @import "../core/container";
 
-.card,
-.card--design,
-.card--team{
-  &__inner{
+.card{
+  .card__inner{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -12,19 +10,19 @@
     box-sizing: border-box;
   }
 
-  &__item{
+  .card__item{
     flex: 1 0 33.3333%;  
   }
 
   .item {
     position: relative;
   
-    &__img{
+    .item__img{
       display: block;
       margin: 0 auto;
     }
 
-    &__description{
+    .item__description{
       box-sizing: border-box;
       width: 330px;
       background-color: $white;
@@ -65,55 +63,55 @@
       @include box-shadow(0.3rem, 0.3rem, 0.6rem, $maize-third-transparent);
     }
   }  
-}
 
-.card--design{
-  background-image: linear-gradient(to bottom, $transparent 50%, $nero 50%);
-}
-
-.card--team{
-  background-image: linear-gradient(to bottom, $nero  50%,  $transparent 50%);
-  margin-bottom: 100px;
-
-  .item__icon{
-    width: 70px;
-    height: 70px;
-    background-color: $maize;
-    @include box-shadow(0px, 5px, 20px, $maize-semi-transparent);
-
-    font-size: 2.7rem;
-    line-height: 4.4rem;
-    text-align: center;
-
-    position: absolute;
-    top: 0;
-    left: 50%;
-    margin-left: -3.8em;
-    margin-top: -0.8em;
-    z-index: 3;
+  &--design{
+    background-image: linear-gradient(to bottom, $transparent 50%, $nero 50%);
   }
 
-  .item__description{
-    width: 234px;
-    padding: 25px 0 35px;
-    margin-left: -117px;
-    top: 75%;
+  &--team{
+    background-image: linear-gradient(to bottom, $nero  50%,  $transparent 50%);
+    margin-bottom: 100px;
   
-
-    .description__title{
+    .item__icon{
+      width: 70px;
+      height: 70px;
+      background-color: $maize;
+      @include box-shadow(0px, 5px, 20px, $maize-semi-transparent);
+  
+      font-size: 2.7rem;
+      line-height: 4.4rem;
       text-align: center;
-      // margin: 25px;
+  
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -3.8em;
+      margin-top: -0.8em;
+      z-index: 3;
     }
-
-    .description__text{
-      text-align: center;
-      @include font-props('FuturaBookC', 1.1rem, 1.6rem, $suva-grey);
-    }
-
-    .description__key{
-      width: 100%;
-      @include font-props('Yeseva One', 1.2rem, 1.25rem, $white, uppercase);
-      padding: 0.7em 1.6em;
+  
+    .item__description{
+      width: 234px;
+      padding: 25px 0 35px;
+      margin-left: -117px;
+      top: 75%;
+    
+  
+      .description__title{
+        text-align: center;
+        // margin: 25px;
+      }
+  
+      .description__text{
+        text-align: center;
+        @include font-props('FuturaBookC', 1.1rem, 1.6rem, $suva-grey);
+      }
+  
+      .description__key{
+        width: 100%;
+        @include font-props('Yeseva One', 1.2rem, 1.25rem, $white, uppercase);
+        padding: 0.7em 1.6em;
+      }
     }
   }
 }
