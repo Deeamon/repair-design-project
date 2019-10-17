@@ -45,7 +45,7 @@
       text-decoration: none;
       margin-right: 45px;
 
-      transition: border-bottom .1s linear; 
+      @include transition(border-bottom);
     }
 
     .contacts__link:hover{

@@ -34,7 +34,7 @@
     margin-left: -43px;
     z-index: 3;
 
-    transition: background-color .1s linear;
+    @include transition(background-color);
   }
 
   .icon-play:hover{

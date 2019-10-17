@@ -145,7 +145,7 @@
       padding: 19px 21px;
 
       margin: auto 50%;
-      transition: background-color .1s linear;
+      @include transition(background-color);
     }
 
     &--measurer{

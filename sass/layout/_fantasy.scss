@@ -35,8 +35,8 @@
       padding-bottom: 3px;
       border-bottom: 1px solid transparent;
 
-      transition: color .1s linear;
-      transition: border-bottom .1s linear;
+      @include transition(color);
+      @include transition(border-bottom);
     }
 
     .list__item:hover,

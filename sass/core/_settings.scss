@@ -2,3 +2,9 @@
 @import "fonts";
 @import "colors";
 
+
+@mixin transition($transition-property){
+  transition-property: #{$transition-property};
+  transition-duration: .1s;
+  transition-timing-function: linear;
+}
