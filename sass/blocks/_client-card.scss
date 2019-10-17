@@ -1,14 +1,14 @@
 @import "../core/settings";
 
 .client-card{
-  &__inner{
+  .client-card__inner{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  &__item{
+  .client-card__item{
     flex: 1 1 33.3333%;
   }
 
@@ -23,13 +23,13 @@
     box-sizing: border-box;
     position: relative;
 
-    &__info{
+    .item__info{
       display: flex;
       align-items: center;
       padding-bottom: 20px;
     }
 
-    &__photo{
+    .item__photo{
       display: block;
       width: 76px;
       height: 76px;
@@ -37,19 +37,19 @@
       overflow: hidden;
     }
 
-    &__name{
+    .item__name{
       @include font-props('Yeseva One', 18px, 23px, $nero-lighter);
       width: 178px;
       margin-left: 23px;
     }
 
-    &__text{
+    .item__text{
       @include font-props('FuturaBookC', 15px, 27px, $suva-grey);
       width: 325px;
       margin: 0 auto;  
     }
 
-    &__key{
+    .item__key{
       text-transform: uppercase;
       background-color: $maize;
       position: absolute;
@@ -66,7 +66,8 @@
         @include font-props('Yeseva One', 17px, 24px, $white, uppercase);
         padding: 10px 23px;
 
-        span{
+        .icon-area,
+        .icon-calendar{
           font-size: 30px;
           vertical-align: middle;
         }
