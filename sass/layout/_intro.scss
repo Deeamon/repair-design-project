@@ -18,7 +18,7 @@
    justify-content: center;
    margin-top: -95px;
 
-  &__text{  //174
+   .sidebar__text{  //174
     width: 174px;
     display: block;
 
@@ -27,32 +27,33 @@
 
     transform-origin: left top;
     transform: rotate(90deg) translate3d(0px, -50px, 0);
+
+    &::after{
+      content: '';
+      display: inline-block;
+      box-sizing: border-box;
+      margin-left: 8px;
+      margin-bottom: 3px;
+      width: 51px;
+      height: 3px;
+      background: $maize;    
+    }
   }
 
-  &__text::after{
-    content: '';
-    display: inline-block;
-    box-sizing: border-box;
-    margin-left: 8px;
-    margin-bottom: 3px;
-    width: 51px;
-    height: 3px;
-    background: $maize;    
   }
-}
 
  .section{
     height: 100vh;
     width: 94.31%;
     flex-shrink: 0;
 
-    &__inner{
+    .section__inner{
       height: 94.27%;
       background: url('../../assets/img/bgr-intro.png');
       background-size: cover;
     }
   
-    &__main{
+    .section__main{
       width: 40.35%; //548
       height: 90.1%;
   
@@ -63,23 +64,23 @@
       margin-left: 4.42%; 
     }
   
-    &__title{
+    .section__title{
       display: block;
       @include font-props('Yeseva One', 40px, 53px, $white, uppercase);
       padding-bottom: 24px;
   
-      span{
+      .title__city{
         color: $maize;
       }
     }
   
-    &__subtitle{
+    .section__subtitle{
       width: 79.37%;
       @include font-props('FuturaBookC', 22px, 30px, $white);
       padding-bottom: 41px;
     }
   
-    &__btn{
+    .section__btn{
       width: 79.37%; //435
       display: flex;
       justify-content: space-between;
