@@ -5,13 +5,13 @@
   height: 730px;
   overflow: hidden;
 
-  &__inner{
+  .measurer__inner{
     height: 705px;
     width: 100%;
     display: flex;
   }
 
-  &__circle{
+  .measurer__circle{
     height: 100%;
     flex: 1 0 60%;
     background: url('../../assets/img/building.png') no-repeat;
@@ -31,7 +31,7 @@
       left: -17%;
       z-index: 1;
 
-      &__item{
+      .circle__item{
         &--first{
           display: flex;
           position: absolute;
@@ -73,7 +73,7 @@
         }
       }
 
-      &__icon{
+      .circle__icon{
         width: 42px;
         height: 42px;
         border-radius: 50%;
@@ -87,7 +87,7 @@
         align-items: center;
       }
 
-      &__text{
+      .circle__text{
         width: 390px;
         height: auto;
         padding-top: 10px;
@@ -96,12 +96,12 @@
     }
   }
 
-  &__form{
+  .measurer__form{
     height: 100%;
     flex: 1 0 40%;
   }
 
-  &__discount{
+  .measurer__discount{
     width: 509px;
     margin: 37px auto 0;
     display: flex;
