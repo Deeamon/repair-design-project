@@ -20,8 +20,7 @@
     .list__title{
       width: 290px;
       margin: 205px auto 50px;
-      @include font-props("Yeseva One", 27px, 37px, $maize);
-      text-transform: uppercase;
+      @include font-props("Yeseva One", 27px, 37px, $maize, uppercase);
     }
 
     .list{

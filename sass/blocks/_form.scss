@@ -44,8 +44,7 @@
   }
 
   &__title--questions{
-    @include font-props('Yeseva One', 20px, 28px, $white);
-    text-transform: uppercase;
+    @include font-props('Yeseva One', 20px, 28px, $white, uppercase);
     text-align: center;
     width: 257px;
     padding: 35px 0 35px;
@@ -127,8 +126,7 @@
 
   &__btn{
     cursor: pointer; 
-    @include font-props('FuturaDemiC', 15px, 26px, $white); 
-    text-transform: uppercase;
+    @include font-props('FuturaDemiC', 15px, 26px, $white, uppercase); 
     border: 0;
     border-radius: 2px;
     
@@ -138,8 +136,7 @@
     &--measurer,
     &--questions{
       cursor: pointer; 
-      @include font-props('FuturaDemiC', 15px, 26px, $white); 
-      text-transform: uppercase;
+      @include font-props('FuturaDemiC', 15px, 26px, $white, uppercase); 
       border: 0;
       border-radius: 2px;
       

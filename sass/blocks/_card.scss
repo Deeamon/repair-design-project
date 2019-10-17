@@ -56,8 +56,7 @@
 
     .description__key{
       box-sizing: border-box;
-      @include font-props('Yeseva One', 18px, 25px, $white);
-      text-transform: uppercase;
+      @include font-props('Yeseva One', 18px, 25px, $white, uppercase);
       background-color: $maize;
       box-shadow: 5px 5px 10px $maize-third-transparent;
       padding: 17px 21px;
@@ -115,8 +114,7 @@
 
     .description__key{
       width: 100%;
-      @include font-props('Yeseva One', 13px, 20px, $white);
-      text-transform: uppercase;
+      @include font-props('Yeseva One', 13px, 20px, $white, uppercase);
       padding: 10px 21px;
     }
   }

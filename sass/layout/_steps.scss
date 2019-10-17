@@ -14,28 +14,24 @@
     flex: 1 0 31.1074%;
 
     &__suptitle{
-      @include font-props('FuturaDemiC', 15px, 21px, $white);
-      text-transform: uppercase;
+      @include font-props('FuturaDemiC', 15px, 21px, $white, uppercase);
       padding-bottom: 18px;
     }
 
     &__title{
       width: 160px;
-      @include font-props('Yeseva One', 27px, 37px, $maize);
-      text-transform: uppercase;
+      @include font-props('Yeseva One', 27px, 37px, $maize, uppercase);
       padding-bottom: 88px;
     }
 
     &__number{
-      @include font-props('Yeseva One', 18px, 25px, $white);
-      text-transform: uppercase;
+      @include font-props('Yeseva One', 18px, 25px, $white, uppercase);
       padding-bottom: 10px;
     }
 
     &__title2{
       width: 240px;
-      @include font-props('Yeseva One', 15px, 23px, $maize);
-      text-transform: uppercase;
+      @include font-props('Yeseva One', 15px, 23px, $maize, uppercase);
       padding-bottom: 16px;
     }
 
@@ -61,8 +57,7 @@
 
       &__num{
         width: 16px;
-        @include font-props('Yeseva One', 15px, 21px, $white);
-        text-transform: uppercase;
+        @include font-props('Yeseva One', 15px, 21px, $white, uppercase);
         padding-bottom: 2px;
         border-bottom: 1px solid $maize;
       }

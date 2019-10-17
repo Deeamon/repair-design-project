@@ -11,8 +11,7 @@
 
 
   &__logo{
-    @include font-props('FuturaDemiC', 14px, 16px, $maize);
-    text-transform: uppercase;
+    @include font-props('FuturaDemiC', 14px, 16px, $maize, uppercase);
     text-decoration: none; 
     cursor: pointer; 
   }
@@ -22,9 +21,8 @@
     justify-content: space-between;
 
     &__link{
-      @include font-props('FuturaBookC', 14px, 16px, $white); 
+      @include font-props('FuturaBookC', 14px, 16px, $white, uppercase); 
       text-decoration: none;
-      text-transform: uppercase;
       margin-right: 47px;
     }
 
@@ -43,9 +41,8 @@
     margin-right: 5.69%;
 
     .contacts__link{
-      @include font-props('FuturaDemiC', 14px, 16px, $maize); 
+      @include font-props('FuturaDemiC', 14px, 16px, $maize, uppercase); 
       text-decoration: none;
-      text-transform: uppercase;
       margin-right: 45px;
 
       transition: border-bottom .1s linear; 

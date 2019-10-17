@@ -63,8 +63,7 @@
 
       .key__size,
       .key__day{
-        @include font-props('Yeseva One', 17px, 24px, $white);
-        text-transform: uppercase;
+        @include font-props('Yeseva One', 17px, 24px, $white, uppercase);
         padding: 10px 23px;
 
         span{

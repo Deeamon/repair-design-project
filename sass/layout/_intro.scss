@@ -23,8 +23,7 @@
     display: block;
 
     text-decoration: none;
-    text-transform: uppercase;
-    @include font-props('FuturaDemiC', 14px, 16px, $maize);
+    @include font-props('FuturaDemiC', 14px, 16px, $maize, uppercase);
 
     transform-origin: left top;
     transform: rotate(90deg) translate3d(0px, -50px, 0);
@@ -66,8 +65,7 @@
   
     &__title{
       display: block;
-      @include font-props('Yeseva One', 40px, 53px, $white);
-      text-transform: uppercase;
+      @include font-props('Yeseva One', 40px, 53px, $white, uppercase);
       padding-bottom: 24px;
   
       span{

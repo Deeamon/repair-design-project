@@ -12,8 +12,8 @@
 
   &__text{
     width: 560px;
-    @include font-props('Yeseva One', 20px, 28px, $maize);
-    text-transform: uppercase;
+    @include font-props('Yeseva One', 20px, 28px, $maize, uppercase);
+
     text-align: center;
     padding: 35px 0 25px;
 

@@ -15,8 +15,7 @@
     padding: 30px 48px;
     background-color: $nero;
 
-    @include font-props("Yeseva One", 14px, 19px, $white);
-    text-transform: uppercase;
+    @include font-props("Yeseva One", 14px, 19px, $white, uppercase);
     text-decoration: none;
 
     display: flex;
@@ -58,8 +57,7 @@
       align-items: flex-end;
       
       &__item{
-        @include font-props("Yeseva One", 14px, 19px, $third-transparent);
-        text-transform: uppercase;
+        @include font-props("Yeseva One", 14px, 19px, $third-transparent, uppercase);
         text-decoration: none; 
 
         margin: 0 60px 45px 0;
@@ -95,8 +93,7 @@
 
 
       &__title{
-        @include font-props("Yeseva One", 27px, 37px, $maize);
-        text-transform: uppercase;
+        @include font-props("Yeseva One", 27px, 37px, $maize, uppercase);
         margin-bottom: 18px;
 
         span{
@@ -131,8 +128,7 @@
           margin-bottom: 32px;
 
           &__title{
-            @include font-props("Yeseva One", 18px, 25px, $maize);
-            text-transform: uppercase;
+            @include font-props("Yeseva One", 18px, 25px, $maize, uppercase);
             margin-bottom: 9px;
           }
 

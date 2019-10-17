@@ -25,8 +25,7 @@
   }
 
   &__title{
-    text-transform: uppercase;
-    @include font-props('Yeseva One', 20px, 28px, $nero-lighter);
+    @include font-props('Yeseva One', 20px, 28px, $nero-lighter, uppercase);
   }
   
   &__icon{
