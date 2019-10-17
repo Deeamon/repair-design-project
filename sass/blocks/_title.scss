@@ -2,7 +2,7 @@
 
 .title{
 
-  background-color: #fff;
+  background-color: $white;
 
   .title__inner,
   .title__inner--project,
@@ -26,7 +26,7 @@
 
   &__title{
     text-transform: uppercase;
-    @include font-props('Yeseva One', 20px, 28px, #181818);
+    @include font-props('Yeseva One', 20px, 28px, $nero-lighter);
   }
   
   &__icon{
@@ -39,7 +39,7 @@
     width: 670px;
     padding-bottom: 40px;
     text-align: center;
-    @include font-props('FuturaBookC', 20px, 27px, #363636);
+    @include font-props('FuturaBookC', 20px, 27px, $gondola);
   }
 
   &__subtitle--team{
@@ -47,11 +47,11 @@
   }
 
   &--black{
-    background-color: #131313;
+    background-color: $nero;
 
     .title__title,
     .title__subtitle{
-      color: #fff;
+      color: $white;
     }
 
     .title__inner{  

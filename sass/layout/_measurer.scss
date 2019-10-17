@@ -22,7 +22,7 @@
      
       height: 92%;
       width: 74%;
-      border-right: 3px solid #E3B873;
+      border-right: 3px solid $maize;
       border-radius: 50%;
       margin-top: 50px;
 
@@ -77,10 +77,10 @@
         width: 42px;
         height: 42px;
         border-radius: 50%;
-        background-color: #E3B873;
-        @include font-props('Yeseva One', 18px, 25px, #ffffff);
+        background-color: $maize;
+        @include font-props('Yeseva One', 18px, 25px, $white);
         margin-right: 10px;
-        border: 10px solid #fff;
+        border: 10px solid $white;
         
         display: flex;
         justify-content: center;
@@ -91,7 +91,7 @@
         width: 390px;
         height: auto;
         padding-top: 10px;
-        @include font-props('FuturaMediumC', 18px, 21px, #363636);
+        @include font-props('FuturaMediumC', 18px, 21px, $gondola);
       }
     }
   }
@@ -109,15 +109,15 @@
     .discount__text{
       width: 230px;
       padding-top: 13px;
-      @include font-props('FuturaDemiC', 20px, 25px, #E3B873);
-      text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+      @include font-props('FuturaDemiC', 20px, 25px, $maize);
+      text-shadow: 0px 3px 10px $maize-quarter-transparent;
     }
 
     .icon-piggy{
       display: block;
       width: 72px;
       height: 72px;
-      background-color: #E3B873;
+      background-color: $maize;
       border-radius: 50%;
       font-size: 35px;
       line-height: 2;

@@ -17,8 +17,8 @@
     flex-direction: column;
     margin: 0 auto;
     width: 376px;
-    background: #FFFFFF;
-    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+    background: $white;
+    box-shadow: 0px 10px 50px $black-semi-transparent;
     padding: 41px 32px 90px 20px;
     box-sizing: border-box;
     position: relative;
@@ -38,32 +38,32 @@
     }
 
     &__name{
-      @include font-props('Yeseva One', 18px, 23px, #181818);
+      @include font-props('Yeseva One', 18px, 23px, $nero-lighter);
       width: 178px;
       margin-left: 23px;
     }
 
     &__text{
-      @include font-props('FuturaBookC', 15px, 27px, #959595);
+      @include font-props('FuturaBookC', 15px, 27px, $suva-grey);
       width: 325px;
       margin: 0 auto;  
     }
 
     &__key{
       text-transform: uppercase;
-      background-color: #E3B873;
+      background-color: $maize;
       position: absolute;
       bottom: -30px;
       left: 0;
       display: flex;
 
       .key__size{
-        border-right: 1px solid #FFFFFF;
+        border-right: 1px solid $white;
       }
 
       .key__size,
       .key__day{
-        @include font-props('Yeseva One', 17px, 24px, #FFFFFF);
+        @include font-props('Yeseva One', 17px, 24px, $white);
         text-transform: uppercase;
         padding: 10px 23px;
 

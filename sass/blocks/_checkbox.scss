@@ -7,7 +7,7 @@
   margin: 33px 0 145px; 
 
   .checkbox__name{
-    @include font-props('FuturaBookC', 16px, 22px , #181818);
+    @include font-props('FuturaBookC', 16px, 22px , $nero-lighter);
   }
 
 }
@@ -16,7 +16,7 @@
   margin: 0 0 50px;
 
   .checkbox__name{
-    color: white;
+    color: $white;
   }
 }
 
@@ -33,7 +33,7 @@ input[type='checkbox'] + label::before{
   display: inline-block;
   width: 18px;
   height: 18px;
-  border: 2px solid #E3B873;
+  border: 2px solid $maize;
   vertical-align: middle;
   margin-right: 9px;
 
@@ -41,7 +41,7 @@ input[type='checkbox'] + label::before{
 }
 
 input[type='checkbox']:checked + label::before{
-  background: url('../../assets/img/check.png') 0px 2px no-repeat,#E3B873;
+  background: url('../../assets/img/check.png') 0px 2px no-repeat, $maize;
   background-size: 16px auto;
 
 }

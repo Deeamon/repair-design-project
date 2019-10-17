@@ -3,7 +3,7 @@
 
 .menu{
   padding: 24px 0;
-  background-color: #131313;
+  background-color: $nero;
 
   display: flex;
   justify-content: space-between;
@@ -11,7 +11,7 @@
 
 
   &__logo{
-    @include font-props('FuturaDemiC', 14px, 16px, #E3B873);
+    @include font-props('FuturaDemiC', 14px, 16px, $maize);
     text-transform: uppercase;
     text-decoration: none; 
     cursor: pointer; 
@@ -22,7 +22,7 @@
     justify-content: space-between;
 
     &__link{
-      @include font-props('FuturaBookC', 14px, 16px, #FFFFFF); 
+      @include font-props('FuturaBookC', 14px, 16px, $white); 
       text-decoration: none;
       text-transform: uppercase;
       margin-right: 47px;
@@ -34,7 +34,7 @@
 
     &__link:hover,
     &__link.active{
-      color: #E3B873;
+      color: $maize;
       cursor: pointer;
     }
   }
@@ -43,7 +43,7 @@
     margin-right: 5.69%;
 
     .contacts__link{
-      @include font-props('FuturaDemiC', 14px, 16px, #E3B873); 
+      @include font-props('FuturaDemiC', 14px, 16px, $maize); 
       text-decoration: none;
       text-transform: uppercase;
       margin-right: 45px;
@@ -52,14 +52,14 @@
     }
 
     .contacts__link:hover{
-      border-bottom: 1px solid #E3B873;
+      border-bottom: 1px solid $maize;
     }
 
   }
 }
 
 .menu--footer{
-  background-color: #131313; 
+  background-color: $nero; 
 
   .menu__logo{
     margin-left: 5.69%;

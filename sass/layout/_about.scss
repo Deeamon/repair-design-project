@@ -2,7 +2,7 @@
 @import "../blocks/slider";
 
 .about{
-  background-color: #131313;
+  background-color: $nero;
   height: 660px;
   
   &__inner{
@@ -13,9 +13,9 @@
   &__scroll-down{
     display: inline-block;
     padding: 30px 48px;
-    background-color: #131313;
+    background-color: $nero;
 
-    @include font-props("Yeseva One", 14px, 19px, #FFFFFF);
+    @include font-props("Yeseva One", 14px, 19px, $white);
     text-transform: uppercase;
     text-decoration: none;
 
@@ -38,7 +38,7 @@
   }
 
   &__scroll-down:hover{
-    color: #E3B873;
+    color: $maize;
   }
 
 
@@ -58,7 +58,7 @@
       align-items: flex-end;
       
       &__item{
-        @include font-props("Yeseva One", 14px, 19px, rgba(255, 255, 255, 0.3));
+        @include font-props("Yeseva One", 14px, 19px, $third-transparent);
         text-transform: uppercase;
         text-decoration: none; 
 
@@ -76,8 +76,8 @@
 
       &__item:hover,
       &__item.active{
-        color: #E3B873;
-        border-bottom: 1px solid #E3B873;
+        color: $maize;
+        border-bottom: 1px solid $maize;
       }
     }
   }
@@ -95,7 +95,7 @@
 
 
       &__title{
-        @include font-props("Yeseva One", 27px, 37px, #E3B873);
+        @include font-props("Yeseva One", 27px, 37px, $maize);
         text-transform: uppercase;
         margin-bottom: 18px;
 
@@ -111,12 +111,12 @@
           margin-bottom: 8px;
           width: 92px;
           height: 1px;
-          background: #E3B873; 
+          background: $maize; 
         }
       }
 
       &__description{
-        @include font-props("FuturaBookC", 18px, 29px, #ffffff);
+        @include font-props("FuturaBookC", 18px, 29px, $white);
         margin-bottom: 42px;
         width: 420px;
       }
@@ -131,13 +131,13 @@
           margin-bottom: 32px;
 
           &__title{
-            @include font-props("Yeseva One", 18px, 25px, #E3B873);
+            @include font-props("Yeseva One", 18px, 25px, $maize);
             text-transform: uppercase;
             margin-bottom: 9px;
           }
 
           &__text{
-            @include font-props("FuturaBookC", 15px, 20px, #ffffff);
+            @include font-props("FuturaBookC", 15px, 20px, $white);
             width: 100px;
           }
         }
@@ -168,9 +168,9 @@
         text-align: center;
         line-height: 3;
 
-        background-color: #E3B873;
+        background-color: $maize;
         border-radius: 50%;
-        box-shadow: 0px 0px 15px rgba(227, 184, 115, 0.5);
+        box-shadow: 0px 0px 15px $maize-semi-transparent;
 
         position: absolute;
         top: 50%;
@@ -182,7 +182,7 @@
       }
 
       .icon-arrow:hover{
-        background-color: darken($color: #E3B873, $amount: 15%);
+        background-color: darken($color: $maize, $amount: 15%);
       }
     }
 

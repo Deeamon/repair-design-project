@@ -2,35 +2,35 @@
 
 .btn{
   cursor: pointer; 
-  @include font-props('FuturaBookC', 13px, 15px, #FFFFFF); 
+  @include font-props('FuturaBookC', 13px, 15px, $white); 
   text-transform: uppercase;
   border: 0;
   border-radius: 2px;
   
   &--call{
-    background-color: #E3B873;
+    background-color: $maize;
     padding: 13px 33px;
-    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    box-shadow: 0px 5px 15px $maize-third-transparent;
 
     transition: background-color .1s linear;
   }
 
   &--call:hover{
-    background-color: darken($color: #E3B873, $amount: 15%);
+    background-color: $maize-dark;
   }
 
   &--intro{
     width: 47.58%; //207
     padding: 20px 0;
     background-color: transparent;
-    border: 1px solid #fff;
+    border: 1px solid $white;
         
     transition: background-color .1s linear;
     transition: border-color .1s linear;
 
     &:hover,
     &.active{
-      background-color: #E3B873;
+      background-color: $maize;
       border-color: transparent;   
     }
   }

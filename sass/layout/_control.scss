@@ -1,7 +1,7 @@
 @import "../core/settings";
 
 .control{
-  background-color: #131313;
+  background-color: $nero;
 
   &__inner{
     height: 215px;
@@ -25,7 +25,7 @@
     text-align: center;
     line-height: 3;
 
-    background-color: #E3B873;
+    background-color: $maize;
     border-radius: 50%;
 
     position: absolute;
@@ -38,7 +38,20 @@
   }
 
   .icon-play:hover{
-    background-color: darken($color: #E3B873, $amount: 15%);
+    background-color: $maize-dark;
   }
 
+}
+
+@media(max-width: 575px){
+  .control{
+
+    &__video{
+      box-sizing: border-box;
+      width: 90%;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
 }

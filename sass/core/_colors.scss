@@ -1,0 +1,18 @@
+/*https://www.color-blindness.com/color-name-hue/*/
+$white: #FFFFFF;
+$maize: #E3B873;
+$maize-dark: darken($color: $maize, $amount: 15%);
+$maize-quarter-transparent: rgba(227, 184, 115, 0.15);
+$maize-third-transparent: rgba(227, 184, 115, 0.3);
+$maize-semi-transparent: rgba(227, 184, 115, 0.5);
+$black-semi-transparent: rgba(0, 0, 0, 0.04);
+$gondola: #363636;
+$gondola-semi-transparent: rgba(54, 54, 54, 0.5);
+$suva-grey: #959595;
+$nero: #131313;
+$nero-lighter: #181818;
+$nero-semi-transparent: rgba(24, 24, 24, 0.9);
+$transparent: rgba(255, 255, 255, 0);
+$quarter-transparent: rgba(255, 255, 255, 0.15);
+$third-transparent: rgba(255, 255, 255, 0.3);
+$semi-transparent: rgba(255, 255, 255, 0.5);

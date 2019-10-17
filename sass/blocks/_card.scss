@@ -29,8 +29,8 @@
       box-sizing: border-box;
       width: 330px;
       // min-height: 286px;
-      background-color: #fff;
-      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+      background-color: $white;
+      box-shadow: 10px 10px 20px $black-semi-transparent;
       padding: 25px 0 55px 34px;
             
       position: absolute;
@@ -41,7 +41,7 @@
     }
 
     .description__title{
-      @include font-props('Yeseva One', 18px, 25px, #363636);
+      @include font-props('Yeseva One', 18px, 25px, $gondola);
       margin-bottom: 13px;
     }
   
@@ -51,15 +51,15 @@
   
     .description__item{
       list-style-type: disc;
-      @include font-props('FuturaBookC', 15px, 25px, #959595);
+      @include font-props('FuturaBookC', 15px, 25px, $suva-grey);
     }
 
     .description__key{
       box-sizing: border-box;
-      @include font-props('Yeseva One', 18px, 25px, #FFFFFF);
+      @include font-props('Yeseva One', 18px, 25px, $white);
       text-transform: uppercase;
-      background-color: #E3B873;
-      box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+      background-color: $maize;
+      box-shadow: 5px 5px 10px $maize-third-transparent;
       padding: 17px 21px;
   
       position: absolute;
@@ -71,17 +71,17 @@
 }
 
 .card--design{
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, #131313 50%);
+  background-image: linear-gradient(to bottom, $transparent 50%, $nero 50%);
 }
 
 .card--team{
-  background-image: linear-gradient(to bottom,  #131313 50%, rgba(255, 255, 255, 0) 50%);
+  background-image: linear-gradient(to bottom, $nero  50%,  $transparent 50%);
   margin-bottom: 100px;
 
   .item__icon{
     width: 70px;
     height: 70px;
-    background-color: #E3B873;
+    background-color: $maize;
     box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5);
 
     font-size: 44px;
@@ -110,12 +110,12 @@
 
     .description__text{
       text-align: center;
-      @include font-props('FuturaBookC', 18px, 26px, #959595);
+      @include font-props('FuturaBookC', 18px, 26px, $suva-grey);
     }
 
     .description__key{
       width: 100%;
-      @include font-props('Yeseva One', 13px, 20px, #FFFFFF);
+      @include font-props('Yeseva One', 13px, 20px, $white);
       text-transform: uppercase;
       padding: 10px 21px;
     }

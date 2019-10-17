@@ -2,7 +2,7 @@
 @import "../blocks/menu";
 
 .intro{
- background-color: #131313;
+ background-color: $nero;
 
  &__inner{
    display: flex;
@@ -24,7 +24,7 @@
 
     text-decoration: none;
     text-transform: uppercase;
-    @include font-props('FuturaDemiC', 14px, 16px, #E3B873);
+    @include font-props('FuturaDemiC', 14px, 16px, $maize);
 
     transform-origin: left top;
     transform: rotate(90deg) translate3d(0px, -50px, 0);
@@ -38,7 +38,7 @@
     margin-bottom: 3px;
     width: 51px;
     height: 3px;
-    background: #E3B873;    
+    background: $maize;    
   }
 }
 
@@ -66,18 +66,18 @@
   
     &__title{
       display: block;
-      @include font-props('Yeseva One', 40px, 53px, #FFFFFF);
+      @include font-props('Yeseva One', 40px, 53px, $white);
       text-transform: uppercase;
       padding-bottom: 24px;
   
       span{
-        color: #E3B873;
+        color: $maize;
       }
     }
   
     &__subtitle{
       width: 79.37%;
-      @include font-props('FuturaBookC', 22px, 30px, #FFFFFF);
+      @include font-props('FuturaBookC', 22px, 30px, $white);
       padding-bottom: 41px;
     }
   

@@ -16,14 +16,14 @@
     width: 9px;
     height: 9px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: $third-transparent;
     margin-right: 17px;
 
     cursor: pointer;
   }
 
   .circle.active{
-    background: #ffffff;
+    background: $white;
   }
 
   .rotate-arrow{

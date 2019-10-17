@@ -1,7 +1,7 @@
 @import "../core/settings";
 
 .steps{
-  background-color: #131313;
+  background-color: $nero;
 
   &__inner{
     width: 100%;
@@ -14,34 +14,34 @@
     flex: 1 0 31.1074%;
 
     &__suptitle{
-      @include font-props('FuturaDemiC', 15px, 21px, #ffffff);
+      @include font-props('FuturaDemiC', 15px, 21px, $white);
       text-transform: uppercase;
       padding-bottom: 18px;
     }
 
     &__title{
       width: 160px;
-      @include font-props('Yeseva One', 27px, 37px, #E3B873);
+      @include font-props('Yeseva One', 27px, 37px, $maize);
       text-transform: uppercase;
       padding-bottom: 88px;
     }
 
     &__number{
-      @include font-props('Yeseva One', 18px, 25px, #ffffff);
+      @include font-props('Yeseva One', 18px, 25px, $white);
       text-transform: uppercase;
       padding-bottom: 10px;
     }
 
     &__title2{
       width: 240px;
-      @include font-props('Yeseva One', 15px, 23px, #E3B873);
+      @include font-props('Yeseva One', 15px, 23px, $maize);
       text-transform: uppercase;
       padding-bottom: 16px;
     }
 
     &__text{
       width: 340px;
-      @include font-props('FuturaBookC', 15px, 25px, #ffffff);
+      @include font-props('FuturaBookC', 15px, 25px, $white);
     }
   }
 
@@ -61,15 +61,15 @@
 
       &__num{
         width: 16px;
-        @include font-props('Yeseva One', 15px, 21px, #ffffff);
+        @include font-props('Yeseva One', 15px, 21px, $white);
         text-transform: uppercase;
         padding-bottom: 2px;
-        border-bottom: 1px solid #E3B873;
+        border-bottom: 1px solid $maize;
       }
 
       &__text{
         width: 130px;
-        @include font-props('FuturaBookC', 15px, 18px, #ffffff);
+        @include font-props('FuturaBookC', 15px, 18px, $white);
         padding: 11px 0 30px;
       }
       
@@ -77,7 +77,7 @@
 
     .point:hover,
     .point.active{
-      color: #ffffff;
+      color: $white;
       opacity: 1;
     }
   }

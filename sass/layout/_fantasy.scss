@@ -20,7 +20,7 @@
     .list__title{
       width: 290px;
       margin: 205px auto 50px;
-      @include font-props("Yeseva One", 27px, 37px, #E3B873);
+      @include font-props("Yeseva One", 27px, 37px, $maize);
       text-transform: uppercase;
     }
 
@@ -32,7 +32,7 @@
       display: block;
       cursor: pointer;
       margin-bottom: 12px;
-      @include font-props("ProximaNova", 20px, 34px, #ffffff);
+      @include font-props("ProximaNova", 20px, 34px, $white);
       padding-bottom: 3px;
       border-bottom: 1px solid transparent;
 
@@ -42,9 +42,9 @@
 
     .list__item:hover,
     .list__item.active{
-      color: #E3B873;
+      color: $maize;
       padding-bottom: 3px;
-      border-bottom: 1px solid #E3B873;
+      border-bottom: 1px solid $maize;
     }
 
   }
