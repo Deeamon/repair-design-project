@@ -3,7 +3,7 @@
 .steps{
   background-color: $nero;
 
-  &__inner{
+  .steps__inner{
     width: 100%;
     display: flex;  
   }
@@ -13,40 +13,40 @@
     padding-left: 100px;
     flex: 1 0 31.1074%;
 
-    &__suptitle{
+    .info__suptitle{
       @include font-props('FuturaDemiC', 15px, 21px, $white, uppercase);
       padding-bottom: 18px;
     }
 
-    &__title{
+    .info__title{
       width: 160px;
       @include font-props('Yeseva One', 27px, 37px, $maize, uppercase);
       padding-bottom: 88px;
     }
 
-    &__number{
+    .info__number{
       @include font-props('Yeseva One', 18px, 25px, $white, uppercase);
       padding-bottom: 10px;
     }
 
-    &__title2{
+    .info__title2{
       width: 240px;
       @include font-props('Yeseva One', 15px, 23px, $maize, uppercase);
       padding-bottom: 16px;
     }
 
-    &__text{
+    .info__text{
       width: 340px;
       @include font-props('FuturaBookC', 15px, 25px, $white);
     }
   }
 
-  &__picture{
+  .steps__picture{
     margin-top: 310px;
     flex: 1 0 60.8926%;
   }
 
-  &__point{
+  .steps__point{
     padding-top: 60px;
     display: flex;
     flex-wrap: wrap;
@@ -55,29 +55,29 @@
       flex: 1 1 33.3333%;
       opacity: 0.3;
 
-      &__num{
+      .point__num{
         width: 16px;
         @include font-props('Yeseva One', 15px, 21px, $white, uppercase);
         padding-bottom: 2px;
         border-bottom: 1px solid $maize;
       }
 
-      &__text{
+      .point__text{
         width: 130px;
         @include font-props('FuturaBookC', 15px, 18px, $white);
         padding: 11px 0 30px;
       }
       
+      &:hover,
+      &.active{
+        color: $white;
+        opacity: 1;
+      }
     }
 
-    .point:hover,
-    .point.active{
-      color: $white;
-      opacity: 1;
-    }
   }
 
-  &__photo{
+  .steps__photo{
    display: block;
    width: 91.4444%;
    margin: 25px 0 70px;
