@@ -24,7 +24,7 @@
 
     .item__description{
       box-sizing: border-box;
-      width: 330px;
+      width: 65%;
       background-color: $white;
       @include box-shadow(0.6rem, 0.6rem, 1.25rem, $black-semi-transparent);
             
@@ -70,7 +70,7 @@
 
   &--team{
     background-image: linear-gradient(to bottom, $nero  50%,  $transparent 50%);
-    margin-bottom: 100px;
+    margin-bottom: 10%;
   
     .item__icon{
       width: 70px;
@@ -90,16 +90,23 @@
       z-index: 3;
     }
   
-    .item__description{
-      width: 234px;
+    .item__description--team{
+      width: 50%;
+      box-sizing: border-box;
+      background-color: $white;
+      @include box-shadow(0.6rem, 0.6rem, 1.25rem, $black-semi-transparent);
       padding: 25px 0 35px;
-      margin-left: -117px;
-      top: 75%;
+            
+      position: absolute;
+      top: 80%;
+      left: 25%;
+      z-index: 2;
+
     
   
       .description__title{
         text-align: center;
-        // margin: 25px;
+        margin: 0 0 0.2em 0;
       }
   
       .description__text{
@@ -109,8 +116,10 @@
   
       .description__key{
         width: 100%;
-        @include font-props('Yeseva One', 1.2rem, 1.25rem, $white, uppercase);
+        @include font-props('Yeseva One', 0.8rem, 1.25rem, $white, uppercase);
         padding: 0.7em 1.6em;
+        bottom: -1.6em;
+        text-align: center;
       }
     }
   }

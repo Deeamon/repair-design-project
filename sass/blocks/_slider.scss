@@ -13,11 +13,12 @@
     font-size: 1rem;
     margin-left: 0.75em;
 
-    .rotate-arrow{
-      transform: rotate(180deg);
-      margin-right: 1.8em;
-      margin-left: 0;
-    }
+  }
+
+  &>span:nth-child(1){
+    transform: rotate(180deg);
+    margin-right: 1.8em;
+    margin-left: 0;
   }
 
   .circle{

@@ -9,7 +9,7 @@
   
     @include font-props('FuturaBookC', 20px, 34px, $gondola); 
     text-align: center;
-    padding-top: 265px; 
+    padding-top: 5%; 
 
     &::before{
       content: "";

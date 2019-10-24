@@ -5,7 +5,7 @@
   background-color: $white;
 
   .title__inner{
-    margin-top: 50px;
+    padding-top: 50px;
 
     display: flex;
     flex-direction: column;
@@ -15,7 +15,7 @@
       margin-top: 30px;
     }
   
-    &-clients{
+    .title__inner-clients{
       .title__subtitle{
         padding-bottom: 25px;
       }

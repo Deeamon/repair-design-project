@@ -31,68 +31,69 @@
       left: -17%;
       z-index: 1;
 
-      .circle__item{
-        &--first{
-          display: flex;
-          position: absolute;
-          top: 15%;
-          left: 42%;
-          z-index: 2;
-        }
+    }
 
-        &--second{
-          display: flex;
-          position: absolute;
-          top: 30%;
-          left: 50%;
-          z-index: 2;
-
-          .circle__text{
-            padding-top: 20px;
-          }
-        }
-
-        &--third{
-          display: flex;
-          position: absolute;
-          top: 54%;
-          left: 53%;
-          z-index: 2;
-
-          .circle__text{
-            padding-top: 20px;
-          }
-        }
-
-        &--fourth{
-          display: flex;
-          position: absolute;
-          top: 76%;
-          left: 46%;
-          z-index: 2;
-        }
-      }
-
-      .circle__icon{
-        width: 42px;
-        height: 42px;
-        border-radius: 50%;
-        background-color: $maize;
-        @include font-props('Yeseva One', 18px, 25px, $white);
-        margin-right: 10px;
-        border: 10px solid $white;
-        
+    .circle__item{
+      &--first{
         display: flex;
-        justify-content: center;
-        align-items: center;
+        position: absolute;
+        top: 15%;
+        left: 42%;
+        z-index: 2;
       }
 
-      .circle__text{
-        width: 390px;
-        height: auto;
-        padding-top: 10px;
-        @include font-props('FuturaMediumC', 18px, 21px, $gondola);
+      &--second{
+        display: flex;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        z-index: 2;
+
+        .circle__text{
+          padding-top: 20px;
+        }
       }
+
+      &--third{
+        display: flex;
+        position: absolute;
+        top: 54%;
+        left: 53%;
+        z-index: 2;
+
+        .circle__text{
+          padding-top: 20px;
+        }
+      }
+
+      &--fourth{
+        display: flex;
+        position: absolute;
+        top: 76%;
+        left: 46%;
+        z-index: 2;
+      }
+    }
+
+    .circle__icon{
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background-color: $maize;
+      @include font-props('Yeseva One', 18px, 25px, $white);
+      margin-right: 10px;
+      border: 10px solid $white;
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .circle__text{
+      width: 390px;
+      height: auto;
+      padding-top: 10px;
+      @include font-props('FuturaMediumC', 18px, 21px, $gondola);
     }
   }
 
@@ -102,9 +103,9 @@
   }
 
   .measurer__discount{
-    width: 509px;
-    margin: 37px auto 0;
+    margin-top: 5%;
     display: flex;
+    justify-content: center;
 
     .discount__text{
       width: 230px;

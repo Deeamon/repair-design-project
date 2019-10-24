@@ -2,7 +2,7 @@
 @import "../blocks/checkbox";
 
 .form{
-  margin-right: 45px;
+  // margin-right: 45px;
 
   &--measurer,
   &--questions{
@@ -11,28 +11,47 @@
     margin: 0 auto;
   }
 
+  &--measurer{
+    background-color: $nero;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   &--questions{
     width: 100%;
     background-image: linear-gradient(to bottom, $transparent 50%, $nero-semi-transparent 50%);
   }
 
+  &--request{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%; 
+
+  }
+
+  .form__inner--questions{
+    display: flex;
+    justify-content: center;
+  }
+
   .form__field{
-    margin: 20% auto 0;
-
-    background-color: $nero;
+    // margin: 0 auto;
     @include box-shadow(0px, 30px, 30px, $black-semi-transparent);
+    display: inline-block;
+    margin-right: 4em;
 
-
+  
     &--questions{
+      background-color: $nero;
       width: 883px;
       margin: 165px auto 0;
     }
 
-    &--request{
-      display: flex;
-      justify-content: center;
-      margin-top: 105px;   
-    } 
+   &--measurer{
+     margin: 0 4em;
+   }
+ 
   }
 
 

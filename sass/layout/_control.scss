@@ -1,19 +1,18 @@
 @import "../core/settings";
 
 .control{
-  background-color: $nero;
+  // background-color: $nero;
+  background-image: linear-gradient(to bottom,  $nero 50%, $transparent 50%);
+
 
   .control__inner{
-    height: 215px;
     width: 100%;
+    display: flex;
+    justify-content: center;
     position: relative;
   }
 
   .control__video{
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    margin-left: -409px;
   }
 
   .icon-play{
@@ -29,9 +28,8 @@
     border-radius: 50%;
 
     position: absolute;
-    top: 80%;
-    left: 50%;
-    margin-left: -43px;
+    top: 40%;
+    left: calc(50% - 43px);
     z-index: 3;
 
     @include transition(background-color);
