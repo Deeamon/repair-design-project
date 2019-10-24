@@ -4,10 +4,10 @@
 .checkbox,
 .checkbox--question{
   text-align: center;
-  margin: 33px 0 145px; 
+  margin: 2em 0 4.4em; 
 
   .checkbox__name{
-    @include font-props('FuturaBookC', 16px, 22px , $nero-lighter);
+    @include font-props('FuturaBookC', 1rem, 1.4rem , $nero-lighter);
   }
 
 }
