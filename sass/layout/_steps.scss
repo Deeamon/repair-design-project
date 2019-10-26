@@ -83,3 +83,9 @@
    margin: 25px 0 70px;
   }
 }
+
+@media(max-width: 575px){
+  .steps{
+    display: none;
+  }
+}

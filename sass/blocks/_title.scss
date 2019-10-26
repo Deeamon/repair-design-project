@@ -13,6 +13,7 @@
 
     &--project{
       padding-top: 2em;
+  
     }
 
     &--team{
@@ -63,3 +64,41 @@
   }
 }
 
+
+@media(max-width: 575px){
+  .title{
+
+    .title__inner--project{
+  
+      background-color: $nero;
+      
+      .title__title{
+        color: $white;
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+  
+      }
+  
+      .title__subtitle{
+        max-width: 330px;
+        padding-bottom: 2em;
+        text-align: center;
+        @include font-props('FuturaBookC', 0.9rem, 1.2rem, $white);
+      }
+    }
+  
+    .title__inner--team{
+      padding-top: 6em;
+
+      .title__subtitle{
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+        max-width: 340px;
+      }
+    }
+  }
+
+  .title__clients{
+    display: none;
+  }
+}

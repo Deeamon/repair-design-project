@@ -11,7 +11,8 @@
   }
 
   .contacts__text{
-    width: 560px;
+    order: 1;
+    max-width: 560px;
     @include font-props('Yeseva One', 20px, 28px, $maize, uppercase);
 
     text-align: center;
@@ -24,6 +25,7 @@
   }
 
   .contacts__icon{
+    order: 2;
     padding-bottom: 50px;
 
     .icon{
@@ -45,6 +47,41 @@
         }
       }
   
+    }
+  }
+
+  .map__photo{
+    order: 3;
+    max-width: 925px;
+    height: 465px;
+    background: url('../../assets/img/map.jpg') no-repeat;
+    margin-bottom: 67px;
+  }
+}
+
+
+@media(max-width: 575px){
+  .contacts{
+    .contacts__inner{
+      background-color: $nero;
+      .map__photo{
+        order: 1;
+        width: 90%;
+        margin: 2em 0 0;
+      }
+
+      .contacts__text{
+        order: 2;
+        width: 340px;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+
+      }
+
+      .contacts__icon{
+        order: 3;
+      }
+
     }
   }
 }

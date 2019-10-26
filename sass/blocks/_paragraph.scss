@@ -2,7 +2,7 @@
 
 
 .paragraph{
-  &__text{
+  .paragraph__text{
     display: block;
     margin: 0 auto;
     max-width: 680px;
@@ -33,4 +33,16 @@
   }
 }
 
+@media(max-width: 575px){
+  .paragraph{
+    background:  $nero 50%;
+    .paragraph__text{
+      max-width: 350px;
+      @include font-props('FuturaBookC', 0.8rem, 1.5rem, $white)
+    }
 
+    &--team{
+      display: none;
+    }
+  }
+}

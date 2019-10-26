@@ -27,7 +27,7 @@
   &--request{
     display: flex;
     justify-content: center;
-    margin-top: 7%; 
+    padding-top: 7%; 
 
   }
 
@@ -45,7 +45,7 @@
   
     &--questions{
       background-color: $nero;
-      width: 883px;
+      max-width: 883px;
       margin: 165px auto 0;
     }
 
@@ -54,8 +54,6 @@
    }
  
   }
-
-
 
   .form__title{
     @include font-props('FuturaDemiC', 20px, 25px, $white);
@@ -76,7 +74,7 @@
 
   .form__group--questions{
     display: flex;
-    width: 517px;
+    max-width: 517px;
     justify-content: space-between;
     margin: 0 auto;
 
@@ -86,7 +84,7 @@
   }
 
   .form__email{
-    width: 517px;
+    max-width: 517px;
     margin: 0 auto;
   }
 
@@ -103,7 +101,7 @@
   }
 
   .form__input{
-    width: 230px;
+    max-width: 230px;
     border: 0;
     border-bottom: 1px solid $gondola-semi-transparent;
     @include font-props('FuturaBookC', 18px, 24px, $gondola);
@@ -202,4 +200,76 @@
     }
  
   }
+}
+
+
+@media(max-width: 575px){
+  .form--request{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $nero;
+
+    .form__field{
+      width: 80%;
+      box-shadow: none;
+      margin: 0 auto 2em;
+
+    }
+
+    .form__input{
+      width: 100%;
+      font-size: 1.1rem;
+      line-height: 1.5rem;
+      color: $white;
+      background-color: $nero;
+      // margin-bottom: 2em;
+    }
+
+    .form__label{
+      color: $semi-transparent;
+      font-size: 0.9rem;
+      line-height: 1.25rem;
+    }
+
+    .form__btn{
+      width: 80%;
+    }
+
+  }
+
+  .form--questions{
+
+    .form__field--questions{
+      margin-top: 0;
+      width: 100%;
+    }
+
+    .form__group--questions{
+      flex-direction: column;
+      justify-content: center;
+      
+      .group__item{
+        width: 80%;
+        flex: 0 1 20%;
+        margin: 0 auto;
+      }
+    }
+
+    .form__email{
+      width: 80%;
+    }
+
+    .form__input{
+      width: 100%;
+      max-width: none;
+    }
+
+    .form__btn--questions{
+      margin: 0 auto 5%;
+      display: block;
+      width: 80%;
+    }
+  }
+
 }

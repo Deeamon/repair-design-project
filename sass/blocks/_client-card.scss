@@ -77,3 +77,9 @@
   }
 
 }
+
+@media(max-width: 575px){
+  .client-card{
+    display: none;
+  }
+}

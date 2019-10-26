@@ -40,67 +40,70 @@
 
   .about__gallery{
     width: 100%;
-    height: 438px;
-    display: flex;
+    min-height: 438px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr;
 
-    .gallery{
-      box-sizing: border-box;
-      flex: 1 1 41.12%;
-      height: 100%;
-      padding-left: 60px;
+    grid-template-areas: 
+    "title photo"
+    "description photo"
+    "list photo"
+    "slider photo";
 
+    .gallery__title{
+      grid-area: title;
+      @include font-props("Yeseva One", 27px, 37px, $maize, uppercase);
+      margin-bottom: 18px;
 
-      .gallery__title{
-        @include font-props("Yeseva One", 27px, 37px, $maize, uppercase);
-        margin-bottom: 18px;
-
-        .wrap-word{
-          display: block;
-          
-          &::after{
-            content: '';
-            display: inline-block;
-            box-sizing: border-box;
-            margin-left: 35px;
-            margin-bottom: 8px;
-            width: 92px;
-            height: 1px;
-            background: $maize; 
-          }
-        }
-
-      }
-
-      .gallery__description{
-        @include font-props("FuturaBookC", 18px, 29px, $white);
-        margin-bottom: 42px;
-        width: 420px;
-      }
-
-      .gallery__list{  
-        display: flex;
-        flex-wrap: wrap;
-        width: 370px;
-
-        .list{
-          flex: 1 1 50%;
-          margin-bottom: 32px;
-
-          &__title{
-            @include font-props("Yeseva One", 18px, 25px, $maize, uppercase);
-            margin-bottom: 9px;
-          }
-
-          &__text{
-            @include font-props("FuturaBookC", 15px, 20px, $white);
-            width: 100px;
-          }
-        }
-      }
+      .wrap-word{
+        display: block;
         
+        &::after{
+          content: '';
+          display: inline-block;
+          box-sizing: border-box;
+          margin-left: 35px;
+          margin-bottom: 8px;
+          width: 92px;
+          height: 1px;
+          background: $maize; 
+        }
+      }
+
+    }
+
+    .gallery__description{
+      grid-area: description;
+      @include font-props("FuturaBookC", 18px, 29px, $white);
+      margin-bottom: 42px;
+      width: 420px;
+    }
+
+    .gallery__list{ 
+      grid-area: list; 
+      display: flex;
+      flex-wrap: wrap;
+      width: 370px;
+
+      .list{
+        flex: 1 1 50%;
+        margin-bottom: 32px;
+
+        &__title{
+          @include font-props("Yeseva One", 18px, 25px, $maize, uppercase);
+          margin-bottom: 9px;
+        }
+
+        &__text{
+          @include font-props("FuturaBookC", 15px, 20px, $white);
+          width: 100px;
+        }
+      }
     }
 
     .gallery__photo{
+      grid-area: photo;
       box-sizing: border-box;
       flex: 3 1 58.88%;
       height: 100%;
@@ -139,7 +142,12 @@
       .icon-arrow:hover{
         background-color: darken($color: $maize, $amount: 15%);
       }
+
+      .icon-arrow:nth-child(1){
+        display: none;
+      }
     }
+
 
   }
 
@@ -188,44 +196,84 @@
 
 @media(max-width: 575px){
   .about{
-    &__scroll-down,
-    &__nav{
+    .about__scroll-down,
+    .about__nav{
       display: none;
     }
 
-    &__gallery{
-      height: auto;
-      display: block;
-      // flex-direction: column;
-      .gallery{
-        width: 100%; 
-        padding: 0;
-        
-        &__title{
-        width: 100%;
+    .about__gallery{
+      max-height: 700px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.5fr 1fr 2fr 1.5fr;
+
+      grid-template-areas: 
+      "title"
+      "description"
+      "photo"
+      "list";
+
+      .gallery__title{
+        @include font-props("Yeseva One", 1.3rem, 1.8rem, $maize, uppercase);
+        margin-bottom: 0;
         text-align: center;
-        font-size: 22px;
-        line-height: 138.6%;
-        margin-bottom: 22px;
-          span::after{
-            display: none;
-          }
+  
+         
+        .wrap-word::after{
+          display: none !important; 
+        }
+      }
+
+      .gallery__description{
+        @include font-props("FuturaBookC", 0.8rem, 1.4rem, $white);
+        margin-bottom: 0;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 300px;
+        padding-top: 2em;
+      }
+
+      .gallery__photo{
+        grid-area: photo;
+        box-sizing: border-box;
+        flex: 3 1 58.88%;
+        height: 100%;
+        display: flex;
+  
+        overflow: hidden;
+  
+        position: relative;
+  
+        .gallery__frame{
+          display: block;
+          height: 100%;
+          width: auto;
+          margin: 0 4em;
+        }
+        
+        .icon-arrow:nth-child(1){
+          display: block;
+          left: 2%;
+          transform: rotate(180deg);
         }
 
-        &__description{
-          width: 90%;
-          text-align: center;
-          margin: 0 auto;
-          font-size: 14px;
-          line-height: 158.48%;
-          margin-bottom: 36px;
+        .icon-arrow{
+          right: 2%;
+        }
+  
+      }
+
+      .gallery__list{
+        margin: 0 auto;
+        .list{
+          margin-bottom: 0;
+        }
+        
+        .list:nth-child(1),
+        .list:nth-child(2){
+          margin-top: 3em;
         }
 
-        &__frame{
-          margin: 0 auto;
-          width: 90%;
-        }
-     }
+      }
     }
   }
 }

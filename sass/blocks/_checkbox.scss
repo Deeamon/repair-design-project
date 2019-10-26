@@ -4,7 +4,7 @@
 .checkbox,
 .checkbox--question{
   text-align: center;
-  margin: 2em 0 4.4em; 
+  padding: 2em 0 4.4em; 
 
   .checkbox__name{
     @include font-props('FuturaBookC', 1rem, 1.4rem , $nero-lighter);
@@ -45,6 +45,26 @@ input[type='checkbox']:checked + label::before{
   background: url('../../assets/img/check.png') 0px 2px no-repeat, $maize;
   background-size: 16px auto;
 
+}
+
+@media(max-width: 575px){
+  .checkbox{
+    background-color: $nero;
+    padding: 2em 0 4em;
+    
+    .checkbox__name{
+      font-size: 1rem;
+      line-height: 1.3rem;
+      color: $white;
+
+    }
+  }
+
+  .checkbox--question{
+    margin: 0;
+    padding: 0 0 3em 2em;
+    text-align: left;
+  }
 }
 
 // icon-check

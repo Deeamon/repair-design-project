@@ -124,3 +124,40 @@
     }
   }
 }
+
+@media(max-width: 575px){
+  .card{
+    .item {  
+      .item__img{
+        margin: 0 auto 12em;
+      }
+    }
+
+    &--design{
+      background-color: $nero;
+
+      .item{
+
+        .item__description{
+          top: 65%;
+          left: 11%;
+          margin-left: 0;
+        }
+      }
+
+    }
+
+    &--team{
+      background-color: $nero;
+      margin-bottom: 0;
+      .item {  
+        .item__img{
+          margin: 0 auto 8em;
+        }
+      }
+    }
+
+  }
+
+  
+}
